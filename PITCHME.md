@@ -2,6 +2,6 @@
 
 ---
 
-# Editing
+### Editing
 
-- [https://gitpitch.com/TakesxiSximada/presentations/python-debug-tips](Pythonデバッグ入門)
+- [Pythonデバッグ入門](https://gitpitch.com/TakesxiSximada/presentations/python-debug-tips)
