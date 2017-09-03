@@ -1,4 +1,5 @@
-# PythonデバッグTips
+# Pycon JP 2017
+## Pythonデバッグ入門
 
 ---
 
