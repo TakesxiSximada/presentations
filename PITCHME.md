@@ -75,7 +75,7 @@ Wikipediaより
 
 ---
 
-### printを入れる
+### デバッグのために表示を追加
 
 ```
 for ii in range(1, 21):
@@ -89,6 +89,9 @@ for ii in range(1, 21):
         print('FizzBuzz')
     else:
         print(ii)
+
+@[1,3-]
+@[1-]
 ```
 
 
