@@ -76,6 +76,22 @@ Wikipediaより
 ---
 
 
+```
+for ii in range(1, 21):
+    print('CURRENT: {}'.format(ii))  # 追加
+    if ii % 3 == 0:
+        print('Fizz')
+    elif ii % 5 == 0:
+        print('Buzz')
+    elif ii % 15 == 0:
+        print('HIT')  # 追加
+        print('FizzBuzz')
+    else:
+        print(ii)
+```
+
+---
+
 ### デバッグとは...
 
 - コード量が多かったら...
