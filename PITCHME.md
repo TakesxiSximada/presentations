@@ -33,13 +33,16 @@ Pythonを書いて実行すると、エラーで処理が停止したり、思�
 ### 🍅 今日のアジェンダ 🍅
 
 
-
 - デバッグとは何か
 - printデバッグの方法と考え方
 - 様々なデバッガ特徴
+
   pdb, ipdb, bpdb, pudb, pycharm
+
 - 様々な環境でのデバッグ方法
+
   Django, Gunicorn, Celery, Jupyter notebook, pytest, nose, CircleCI
+
 - デバッグ関連の失敗談と対処方法
 
 ---
@@ -50,9 +53,13 @@ Pythonを書いて実行すると、エラーで処理が停止したり、思�
 - 🍅デバッグとは何か
 - printデバッグの方法と考え方
 - 様々なデバッガ特徴
+
   pdb, ipdb, bpdb, pudb, pycharm
+
 - 様々な環境でのデバッグ方法
+
   Django, Gunicorn, Celery, Jupyter notebook, pytest, nose, CircleCI
+
 - デバッグ関連の失敗談と対処方法
 
 ### デバッグとは...
