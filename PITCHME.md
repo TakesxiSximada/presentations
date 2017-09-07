@@ -308,8 +308,8 @@ printデバッグ
 
 ---
 
-- 単純なプログラムであれば処理を追いかけられる
-- 複雑 なプログラムでは処理を追いづらい
+- 単純な処理は追いかけられる
+- 複雑な処理を追いかけづらい
 - 表示してもよくわからないobjectもあるよね (classのインスタンスとか)
 
  ⬇
@@ -319,17 +319,34 @@ printデバッグ
 
 ---
 
+# pdb
 
+---
+
+
+# pdb
+
+- Python標準のデバッガ
+- インストール不要
+- CLI操作でデバッグを実行
+- gdbに似ている (Cのデバッガ)
 
 ---
 
-- pdb
-- ipdb
-- bpdb
-- pudb
-- pycharm
+# 実行
 
----
+```
+$ python -m pdb example_fizzbuzz_buggy.py
+> /working/advent-calendar-2016-python/example_fizzbuzz_buggy.py(1)<module>()
+-> for ii in range(1, 21):
+(Pdb)
+```
+
+
+
+
+
+
 
 
 ### デバッグとは...
