@@ -71,8 +71,10 @@ Wikipediaより
 
 実行してみる
 
----?code=fizzbuzz_stdout.log
+---?code=fizzbuzz_stdout_1.log
 
+
++++?code=fizzbuzz_stdout_2.log
 
 
 ---
