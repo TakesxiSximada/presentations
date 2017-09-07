@@ -307,10 +307,12 @@ printデバッグ
 
 ### printデバッグの特徴と問題点
 
-- 単純な処理は追いかけられる
+- 簡単で手っ取り早い
+- 単純な処理は追いかけられる |
 - 複雑な処理を追いかけづらい |
 - 表示してもよくわからないobjectもある |
-  - classのインスタンスとか `<__main__.Testing object at 0x108c4e160>` |
+- classのインスタンスとか
+- 例 `<__main__.Testing object at 0x108c4e160>` |
 
  ⬇
 
@@ -357,14 +359,13 @@ $ python -m pdb fizzbuzz.py
 
 @[1](n RETを入力)
 @[3-4](1行実行し停止)
-@[2](``)
 
 ---
 
 ### 表示の解説
 
 ```
-> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(2)<module>()
+> /src/presentations/fizzbuzz.py(2)<module>()
 ```
 
 - `> ファイルパス(実行している行数)関数名()`
@@ -374,7 +375,7 @@ $ python -m pdb fizzbuzz.py
 
 ---
 
-### 何も指定せずRETで前回と同じ処理を実行
+### 前回と同じ処理を実行
 
 ```
 (Pdb)
@@ -384,10 +385,13 @@ $ python -m pdb fizzbuzz.py
 > /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(6)<module>()
 -> elif ii % 15 == 0:
 (Pdb)
-> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(9)<module>()
--> print(ii)
-(Pdb)
 ```
+
+@[1](RET)
+@[2-3](実行)
+@[4](RET)
+@[5-6](実行)
+
 
 ---
 
@@ -409,7 +413,7 @@ $ python -m pdb fizzbuzz.py
 ```
 
 @[1](lを入力)
-@[5](->のマークのある行が次に実行される行)
+@[5](次に実行される行)
 
 ---
 
@@ -433,8 +437,8 @@ The program finished and will be restarted
 ```
 
 @[1](cを入力)
-@[2-5](処理が続行される)
-@[6-](処理が最後まで実行されると再び最初から実行)
+@[2-9](処理が続行される)
+@[10-13](再び最初から実行)
 
 
 ---
