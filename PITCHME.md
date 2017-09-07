@@ -76,7 +76,7 @@ Wikipediaより
 ---
 
 
-```
+```python
 for ii in range(1, 21):
     print('CURRENT: {}'.format(ii))  # 追加
     if ii % 3 == 0:
