@@ -75,7 +75,7 @@ Wikipediaより
 
 ---
 
-# できるはずだが...
+### printを入れる
 
 ```
 for ii in range(1, 21):
@@ -91,7 +91,6 @@ for ii in range(1, 21):
         print(ii)
 ```
 
-???
 
 ---
 
