@@ -5,31 +5,18 @@
 - デバッグとは |
 - printデバッグの方法と考え方 |
 - 様々なデバッガの特徴 |
-
-  pdb, ipdb, bpdb, pudb, pycharm |
-
 - 様々な環境でのデバッグ方法 |
-
-  Django, Gunicorn, Celery, Jupyter notebook, pytest, nose, CircleCI |
-
 - デバッグ関連の失敗談と対処方法 |
 
 ---
 
-- 🍅 デバッグとは
-- printデバッグの方法と考え方
-- 様々なデバッガの特徴
-
-  pdb, ipdb, bpdb, pudb, pycharm
-
-- 様々な環境でのデバッグ方法
-
-  Django, Gunicorn, Celery, Jupyter notebook, pytest, nose, CircleCI
-
-- デバッグ関連の失敗談と対処方法
+- 🍅 デバッグとは |
+- printデバッグの方法と考え方 |
+- 様々なデバッガの特徴 |
+- 様々な環境でのデバッグ方法 |
+- デバッグ関連の失敗談と対処方法 |
 
 ---
-
 
 # デバッグとは...
 
