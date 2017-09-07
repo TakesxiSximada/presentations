@@ -65,10 +65,6 @@ Wikipediaより
 
 ---
 
-わかった？
-
----
-
 実行してみる
 
 ---?code=fizzbuzz_stdout_1.log
@@ -76,6 +72,10 @@ Wikipediaより
 
 +++?code=fizzbuzz_stdout_2.log
 
+---
+
+`FizzBuzz` という表示が1個もない
+どこが悪いんだろう？？？|
 
 ---
 
