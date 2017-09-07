@@ -92,10 +92,103 @@ for ii in range(1, 21):
 
 ```
 
-@[2](現在数値を表示するように修正)
+@[2](現在の数値を表示するように修正)
+
+---
+
+##### 実行
+
+```
+$ python  example_fizzbuzz.py
+CURRENT: 1
+1
+CURRENT: 2
+2
+CURRENT: 3
+Fizz
+CURRENT: 4
+4
+CURRENT: 5
+Buzz
+CURRENT: 6
+Fizz
+CURRENT: 7
+7
+CURRENT: 8
+8
+CURRENT: 9
+Fizz
+CURRENT: 10
+Buzz
+```
+
++++
+
+##### 実行
+
+```
+CURRENT: 11
+11
+CURRENT: 12
+Fizz
+CURRENT: 13
+13
+CURRENT: 14
+14
+CURRENT: 15
+Fizz
+CURRENT: 16
+16
+CURRENT: 17
+17
+CURRENT: 18
+Fizz
+CURRENT: 19
+19
+CURRENT: 20
+Buzz
+```
+
+@[9-10](見やすい)
 
 
 ---
+
+- 15がFizzになっている |
+- なんで？？？ |
+
+---
+
+##### 処理を追いかける
+
+```
+for ii in range(1, 21):
+    print('CURRENT: {}'.format(ii))  # 追加
+    if ii % 3 == 0:
+        print('Fizz')
+    elif ii % 5 == 0:
+        print('Buzz')
+    elif ii % 15 == 0:
+        print('HIT')  # 追加
+        print('FizzBuzz')
+    else:
+        print(ii)
+```
+
+@[1](iiが15の時)
+@[3](15 % 3 => 0 ですよね？)
+@[4](実行されてしまう)
+@[5](最初のifが実行されたので実行されない)
+@[7](最初のifが実行されたので実行されない)
+@[10](最初のifが実行されたので実行されない)
+@[1](次のターン！！)
+
+---
+
+# バグ🍅
+
+---
+
 
 ### デバッグとは...
 
