@@ -323,8 +323,7 @@ printデバッグ
 
 ---
 
-
-# pdb
+# pdb とは
 
 - Python標準のデバッガ
 - インストール不要
@@ -336,18 +335,36 @@ printデバッグ
 # 実行
 
 ```
-$ python -m pdb example_fizzbuzz_buggy.py
-> /working/advent-calendar-2016-python/example_fizzbuzz_buggy.py(1)<module>()
+$ python -m pdb fizzbuzz.py
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(1)<module>()
 -> for ii in range(1, 21):
 (Pdb)
 ```
 
+@[1](スクリプト実行時にーm pdbを指定)
+@[3-4](スクリプトの最初の処理で停止して入力待ちとなる)
 
+---
 
+# n RETで1行進む
 
+```
+(Pdb) n
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(2)<module>()
+-> if ii % 3 == 0:
+(Pdb)
+```
 
+@[1](n RETを入力)
+@[3-4](1行実行し入力待ちになる)
+@[2](`> ファイルパス(実行している行数)関数名()`)
 
+<!--
+今回は関数にしていないので関数名の所は `<module>` という表示になっています。
+(実際には\_\_name\_\_の値を表示します)
+-->
 
+---
 
 ### デバッグとは...
 
