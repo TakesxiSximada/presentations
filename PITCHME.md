@@ -323,7 +323,7 @@ printデバッグ
 
 ---
 
-# pdb とは
+### pdb とは
 
 - Python標準のデバッガ
 - インストール不要
@@ -341,12 +341,12 @@ $ python -m pdb fizzbuzz.py
 (Pdb)
 ```
 
-@[1](スクリプト実行時にーm pdbを指定)
-@[3-4](スクリプトの最初の処理で停止して入力待ちとなる)
+@[1](スクリプト実行時に `-m pdb` を指定)
+@[3-4](スクリプトの最初の処理で停止)
 
 ---
 
-# n RETで1行進む
+### 1行進む
 
 ```
 (Pdb) n
@@ -356,13 +356,86 @@ $ python -m pdb fizzbuzz.py
 ```
 
 @[1](n RETを入力)
-@[3-4](1行実行し入力待ちになる)
-@[2](`> ファイルパス(実行している行数)関数名()`)
+@[3-4](1行実行し停止)
+@[2](``)
 
-<!--
-今回は関数にしていないので関数名の所は `<module>` という表示になっています。
-(実際には\_\_name\_\_の値を表示します)
--->
+---
+
+### 表示の解説
+
+```
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(2)<module>()
+```
+
+- `> ファイルパス(実行している行数)関数名()`
+- 今回は関数にしていないので関数名の所は `<module>` という表示
+- 実際には\_\_name\_\_の値を表示
+
+
+---
+
+### 何も指定せずRETで前回と同じ処理を実行
+
+```
+(Pdb)
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(4)<module>()
+-> elif ii % 5 == 0:
+(Pdb)
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(6)<module>()
+-> elif ii % 15 == 0:
+(Pdb)
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(9)<module>()
+-> print(ii)
+(Pdb)
+```
+
+---
+
+### 現在どこの行を実行しているかを確認
+
+
+```
+(Pdb) l
+  1     for ii in range(1, 21):
+  2         if ii % 3 == 0:
+  3             print('Fizz')
+  4  ->     elif ii % 5 == 0:
+  5             print('Buzz')
+  6         elif ii % 15 == 0:
+  7             print('FizzBuzz')
+  8         else:
+  9             print(ii)
+[EOF]
+```
+
+@[1](lを入力)
+@[5](->のマークのある行が次に実行される行)
+
+---
+
+### 処理を続行させる
+
+
+```
+(Pdb) c
+2
+Fizz
+4
+Buzz
+〜 省略 〜
+Fizz
+19
+Buzz
+The program finished and will be restarted
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(1)<module>()
+-> for ii in range(1, 21):
+(Pdb)
+```
+
+@[1](cを入力)
+@[2-5](処理が続行される)
+@[6-](処理が最後まで実行されると再び最初から実行)
+
 
 ---
 
