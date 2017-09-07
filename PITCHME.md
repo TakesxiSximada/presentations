@@ -63,7 +63,23 @@ Wikipediaより
 
 ※今回は1から20までを実施
 
----?code=fizzbuzz.py
+---
+
+### サンプル
+
+fizzbuzz.py
+
+```
+for ii in range(1, 21):
+    if ii % 3 == 0:
+        print('Fizz')
+    elif ii % 5 == 0:
+        print('Buzz')
+    elif ii % 15 == 0:
+        print('FizzBuzz')
+    else:
+        print(ii)
+```
 
 ※バグが含まれています
 
@@ -300,8 +316,17 @@ printデバッグ
 
 ---
 
+- 🍅 様々なデバッガの特徴
+  - 🍅 pdb
+  - ipdb
+  - bpdb
+  - pudb
+  - pycharm
+
+---
+
 ##### 僕らの武器
-### printデバッグ
+#### printデバッグ
 
 ---
 
@@ -656,6 +681,163 @@ Clear all breaks?
 @[1](clで除去)
 
 ---
+
+### 他のコマンド
+
+
+- h: ヘルプを表示
+- s: 関数の中に入る
+- r: 現在の関数が返るまで進む
+- q: デバッガ終了
+- interact: 現在のスコープでInteractiveShellを起動(終了はC-d)
+
+他にもあります
+
+[27.3.1. デバッガコマンド](https://docs.python.jp/3/library/pdb.html#debugger-commands) 参照
+
+---
+
+### もう一つの方法
+
+- pdb.set_trace() をコードの中に直接
+- その行が実行された時にpdbが起動する
+
+---
+
+### 例
+
+```
+for ii in range(1, 21):
+    if ii % 3 == 0:
+        print('Fizz')
+    elif ii % 5 == 0:
+        import pdb; pdb.set_trace()  # 追加
+        print('Buzz')
+    elif ii % 15 == 0:
+        print('FizzBuzz')
+    else:
+        print(ii)
+```
+
+@[5](pdb.set_traceを追加)
+
+### 実行
+
+```
+$ python fizzbuzz_pdb.py
+1
+2
+Fizz
+4
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz_pdb.py(6)<module>()
+-> print('Buzz')
+(Pdb)
+```
+
+@[1](-m pdbを指定していない)
+@[6-8](停止)
+
+---
+
+- 起動オプションを変更する必要がない
+- import文とpdb.set_trace()を1行でやることが多い
+- その方が消す量が少なくて済む
+
+---
+
+- 🍅 様々なデバッガの特徴
+  - ~~pdb~~
+  - 🍅 ipdb
+  - bpdb
+  - pudb
+  - pycharm
+
+---
+
+# ipdb
+
+---
+
+- pdbの機能をIPythonを使って拡張したデバッガ
+- `pip install ipdb`
+- `-m ipdb` をPythonの起動オプションに指定して起動
+- または `import ipdb; ipdb.set_trace()` をコード内に記述
+- 使用方法はほぼpdbと同じ
+- interactでIPythonのInteractiveShellに入れる
+
+---
+
+# bpdb
+
+---
+
+- pdbの機能をBPythonを使って拡張したデバッガ
+- BPythonの1機能として提供されている
+- `pip install bpython`
+- `-m bpdb` をPythonの起動オプションに指定して起動
+- または `import bpdb; bpdb.set_trace()` をコード内に記述
+- 使用方法はほぼpdbと同じ
+- BでBPythonのInteractiveShellに入れる
+
+---
+
+# pudb
+
+---
+
+- コンソール上で使える高機能なデバッガ
+- `pip install pudb`
+- 設定ファイル ~/.config/pudb/pudb.cfg
+
+---
+
+### 実行
+
+pudb3コマンド(Python3の場合)がつかえるようになる。
+
+```
+$ pudb3 example_fizzbuzz_buggy.py
+```
+
+`C-x` でデバッガのペインとインタラクティブシェルのペインを移動できる
+
+---
+
+### 設定ファイル
+
+~/.config/pudb/pudb.cfg
+
+```
+[pudb]
+breakpoints_weight = 1
+current_stack_frame = top
+custom_stringifier =
+custom_theme =
+display = auto
+line_numbers = True
+prompt_on_quit = True
+seen_welcome = e027
+shell = classic
+sidebar_width = 0.5
+stack_weight = 1
+stringifier = type
+theme = dark vim
+variables_weight = 1
+wrap_variables = True
+```
+
+---
+
+### PyCharm
+
+- JetBrains社が開発したPythonのIDE
+- GUI操作
+- とっても直感的
+
+---
+
+
+
 
 ### デバッグとは...
 
