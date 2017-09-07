@@ -419,7 +419,6 @@ $ python -m pdb fizzbuzz.py
 
 ### 処理を続行させる
 
-
 ```
 (Pdb) c
 2
@@ -440,6 +439,223 @@ The program finished and will be restarted
 @[2-9](処理が続行される)
 @[10-13](再び最初から実行)
 
+---
+
+### break point
+
+```
+(Pdb) b 2
+Breakpoint 1 at /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py:2
+(Pdb) c
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(2)<module>()
+-> if ii % 3 == 0:
+(Pdb)
+```
+
+@[1](b [行番号]を入力)
+@[2](2行目にbreak pointが作成される)
+@[3](cで処理を続行)
+@[5-6](break pointで処理が停止)
+
+---
+
+### 値の表示
+
+```
+(Pdb) p ii
+1
+(Pdb)
+```
+
+@[1](pでiiを表示する)
+@[2](1が表示される)
+@[3](処理が停止)
+
+---
+
+### pdbを使ってFizzBuzzをデバッグ
+
+
+```
+$ python -m pdb fizzbuzz.py
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(1)<module>()
+-> for ii in range(1, 21):
+(Pdb) l
+  1  -> for ii in range(1, 21):
+  2         if ii % 3 == 0:
+  3             print('Fizz')
+  4         elif ii % 5 == 0:
+  5             print('Buzz')
+  6         elif ii % 15 == 0:
+  7             print('FizzBuzz')
+  8         else:
+  9             print(ii)
+[EOF]
+```
+
++++
+
+### 続き
+
+```
+(Pdb) b 2
+Breakpoint 1 at /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py:2
+(Pdb) c
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(2)<module>()
+-> if ii % 3 == 0:
+(Pdb) c
+1
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(2)<module>()
+-> if ii % 3 == 0:
+(Pdb) c
+2
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(2)<module>()
+-> if ii % 3 == 0:
+c(Pdb) c
+Fizz
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(2)<module>()
+-> if ii % 3 == 0:
+c(Pdb) c
+4
+```
+
++++
+
+### 続き
+
+```
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(2)<module>()
+-> if ii % 3 == 0:
+(Pdb) c
+Buzz
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(2)<module>()
+-> if ii % 3 == 0:
+c(Pdb) c
+Fizz
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(2)<module>()
+-> if ii % 3 == 0:
+c(Pdb) c
+7
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(2)<module>()
+-> if ii % 3 == 0:
+(Pdb) c
+8
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(2)<module>()
+-> if ii % 3 == 0:
+(Pdb) c
+Fizz
+```
+
++++
+
+### 続き
+
+```
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(2)<module>()
+-> if ii % 3 == 0:
+(Pdb) c
+Buzz
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(2)<module>()
+-> if ii % 3 == 0:
+(Pdb) c
+11
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(2)<module>()
+-> if ii % 3 == 0:
+(Pdb) c
+Fizz
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(2)<module>()
+-> if ii % 3 == 0:
+(Pdb) c
+13
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(2)<module>()
+-> if ii % 3 == 0:
+(Pdb) c
+14
+```
+
++++
+
+### 続き
+
+```
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(2)<module>()
+-> if ii % 3 == 0:
+(Pdb) p ii
+15
+(Pdb) n
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(3)<module>()
+-> print('Fizz')
+(Pdb) list
+  1     for ii in range(1, 21):
+  2 B       if ii % 3 == 0:
+  3  ->         print('Fizz')
+  4         elif ii % 5 == 0:
+  5             print('Buzz')
+  6         elif ii % 15 == 0:
+  7             print('FizzBuzz')
+  8         else:
+  9             print(ii)
+[EOF]
+(Pdb) n
+Fizz
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(1)<module>()
+-> for ii in range(1, 21):
+(Pdb)
+```
+
+@[2-7](おかしな処理を確認)
+
+---
+
+# ！！
+
+---
+
+c RET c RET c RET c RET c RET
+c RET c RET c RET c RET c RET
+c RET c RET c RET c RET
+
+
+大変だ...
+
+---
+
+### break pointに条件を指定
+
+```
+The program finished and will be restarted
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(1)<module>()
+-> for ii in range(1, 21):
+(Pdb) b 2, ii == 15
+Breakpoint 3 at /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py:2
+(Pdb) c
+1
+2
+〜省略〜
+13
+14
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(2)<module>()
+-> if ii % 3 == 0:
+(Pdb) p ii
+15
+(Pdb)
+```
+
+@[4](iiが15の時だけ処理を停止)
+@[6-11](実行)
+@[12-14](停止)
+
+---
+
+### break pointの除去
+
+```
+(Pdb) cl
+Clear all breaks?
+(Pdb)
+```
+
+@[1](clで除去)
 
 ---
 
