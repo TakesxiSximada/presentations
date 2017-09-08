@@ -871,7 +871,7 @@ wrap_variables = True
 # unittest
 
 - テストが落ちるんだけど、その理由がわからない... |
-- test内に `pdb.set_trace()` を記述 |
+- test内にpdb.set_trace()を記述 |
 
 ---
 
@@ -924,7 +924,7 @@ $ python -m unittest
 
 ```
 $ nosetests --nocapture
-> /working/advent-calendar-2016-python/test_main.py(11)test_it()
+> /working/test_main.py(11)test_it()
 -> msg = create_message(1)
 (Pdb)
 ```
@@ -958,13 +958,13 @@ $ nosetests --pdb
 $ pytest
 ================================================================================ test session starts ================================================================================
 platform darwin -- Python 3.5.2, pytest-3.0.5, py-1.4.32, pluggy-0.4.0
-rootdir: /working/advent-calendar-2016-python, inifile:
+rootdir: /working, inifile:
 plugins: celery-4.0.0
 collected 1 items
 
 test_main.py
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> PDB set_trace (IO-capturing turned off) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-> /working/advent-calendar-2016-python/test_main.py(11)test_it()
+> /working/test_main.py(11)test_it()
 -> msg = create_message(1)
 (Pdb)
 ```
@@ -977,7 +977,7 @@ test_main.py
 $ pytest --pdb
 ================================================================================ test session starts ================================================================================
 platform darwin -- Python 3.5.2, pytest-3.0.5, py-1.4.32, pluggy-0.4.0
-rootdir: /working/advent-calendar-2016-python, inifile:
+rootdir: /working, inifile:
 plugins: celery-4.0.0
 collected 2 items
 
@@ -1089,7 +1089,7 @@ $ curl http://127.0.0.1:8000/
 ### デバッガが起動
 
 ```
-> /working/advent-calendar-2016-python/proj/urls.py(7)top_view()
+> /working/proj/urls.py(7)top_view()
 -> return HttpResponse('OK')
 (Pdb)
 ```
@@ -1148,7 +1148,7 @@ $ curl http://127.0.0.1:8000/
 ### デバッガ起動
 
 ```
-> /working/advent-calendar-2016-python/proj/urls.py(7)top_view()
+> /working/proj/urls.py(7)top_view()
 -> return HttpResponse('OK')
 (Pdb)
 ```
@@ -1175,7 +1175,7 @@ $ gunicorn proj.wsgi:application --timeout 9999999
 [2016-12-24 23:13:11 +0900] [9126] [INFO] Listening at: http://127.0.0.1:8000 (9126)
 [2016-12-24 23:13:11 +0900] [9126] [INFO] Using worker: sync
 [2016-12-24 23:13:11 +0900] [9130] [INFO] Booting worker with pid: 9130
-> /working/advent-calendar-2016-python/proj/urls.py(7)top_view()
+> /working/proj/urls.py(7)top_view()
 -> return HttpResponse('OK')
 (Pdb)
 ```
@@ -1273,7 +1273,7 @@ $ telnet 127.0.0.1 6900
 Trying 127.0.0.1...
 Connected to localhost.
 Escape character is '^]'.
-> /working/advent-calendar-2016-python/tasks.py(10)add()
+> /working/tasks.py(10)add()
 -> return x + y
 (Pdb) p x
 1
