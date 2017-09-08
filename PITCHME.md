@@ -1032,6 +1032,100 @@ test_main.py:15: AssertionError
 
 ---
 
+- 様々な環境でのデバッグ方法
+  - ~~unittest~~
+  - 🍅 Django
+  - Gunicorn
+  - Celery
+  - Jupyter Notebook
+  - CircleCI
+  - リモート環境
+  - 本番環境
+
+---
+
+# Django
+
+---
+
+### Django
+
+- [Django](https://www.djangoproject.com/)
+- ウェブフレームワーク
+
+---
+
+### Project構成
+
+```
+$ tree proj
+proj
+├── __init__.py
+├── settings.py
+├── urls.py
+└── wsgi.py
+```
+
+---
+
+### 簡単なviewを作成
+
+proj/urls.py
+
+```
+from django.conf.urls import url
+from django.http import HttpResponse
+
+
+def top_view(request):
+    import pdb; pdb.set_trace()
+    return HttpResponse('OK')
+
+urlpatterns = [
+    url(r'^$', top_view),
+]
+```
+
+@[10](`/` にアクセスすると...)
+@[5-7](`OK`とリクエストを返す)
+@[6](pdbを仕込む)
+
+---
+
+### 開発サーバを起動
+
+
+```
+$ python manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 24, 2016 - 13:45:26
+Django version 1.11.dev20161224024349, using settings 'proj.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+```
+
+---
+
+### リクエストを送信
+
+```
+$ curl http://127.0.0.1:8000/
+```
+
+---
+
+### デバッガが起動
+
+```
+> /working/advent-calendar-2016-python/proj/urls.py(7)top_view()
+-> return HttpResponse('OK')
+(Pdb)
+```
+
+---
+
 ### アジェンダ
 
 - ~~デバッグとは~~
@@ -1079,6 +1173,23 @@ test_main.py:15: AssertionError
 - lambdaがいっぱいのコード
 - 内包表記がごついコード
 
+---
+
+### 例
+
+```
+obj = [(ii + jj + kk)
+       for ii in range(10)
+       for jj in range(10)
+       for kk in range(10)
+       if ii % 3 == 0
+]
+```
+
+---
+
+#### 頑張って内包表記を使おうとするな
+#### 内包表記の中で複雑な計算をするな |
 
 ---
 
