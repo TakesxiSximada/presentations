@@ -899,13 +899,12 @@ wrap_variables = True
 
 ---
 
-テストが落ちるんだけど、その理由がわからない... |
-⬇ |
-test内に `pdb.set_trace()` を記述
+- テストが落ちるんだけど、その理由がわからない... |
+- test内に `pdb.set_trace()` を記述 |
 
 ---
 
-test_main.py::
+test_main.py
 
 ```
 from unittest import TestCase
@@ -1239,7 +1238,7 @@ $ gunicorn proj.wsgi:application --timeout 9999999
 
 ### サンプルコード
 
-tasks.py::
+tasks.py
 
 ```
 from celery import Celery
@@ -1294,7 +1293,7 @@ $ celery -A tasks.app worker
 workerは `Remote Debugger:6900: Waiting for client...` というメッセージを表示する
 
 
-----
+---
 
 ### telnetでアクセス
 
@@ -1518,8 +1517,8 @@ obj = [(ii + jj + kk)
 
 ---
 
-#### 頑張って内包表記を使おうとするな
-#### 内包表記の中で複雑な計算をするな |
+- 頑張って内包表記を使おうとするな
+- 内包表記の中で複雑な計算をするな
 
 ---
 
@@ -1586,8 +1585,8 @@ def get_payload():
 
 ---
 
-#### ログを出すことでデバッグするまでもなくなる
-#### 適切にログを出そう |
+- ログを出すことでデバッグするまでもなくなる
+- 適切にログを出そう
 
 ---
 
@@ -1625,5 +1624,4 @@ def get_payload():
 
 ### みんなやろうよ
 ### DEBUG！！
-
-###### 🍅  終わり 🍅
+###### 🍅終わり🍅
