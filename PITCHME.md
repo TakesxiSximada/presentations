@@ -1126,6 +1126,336 @@ $ curl http://127.0.0.1:8000/
 
 ---
 
+# あとはいつもと同じ
+
+
+---
+
+- 様々な環境でのデバッグ方法
+  - ~~unittest~~
+  - ~~Django~~
+  - 🍅 Gunicorn
+  - Celery
+  - Jupyter Notebook
+  - CircleCI
+  - リモート環境
+  - 本番環境
+
+
+---
+
+# Gunicorn
+
+---
+
+- [gunicorn](http://gunicorn.org/)
+- WSGI HTTP Server
+- 今回は先ほどのDjango Projectを [gunicorn](http://gunicorn.org/) で実行する
+
+
+---
+
+### Gunicornの実行
+
+```
+$ gunicorn proj.wsgi:application
+[2016-12-24 22:53:59 +0900] [8915] [INFO] Starting gunicorn 19.6.0
+[2016-12-24 22:53:59 +0900] [8915] [INFO] Listening at: http://127.0.0.1:8000 (8915)
+[2016-12-24 22:53:59 +0900] [8915] [INFO] Using worker: sync
+[2016-12-24 22:53:59 +0900] [8918] [INFO] Booting worker with pid: 8918
+```
+
+---
+
+### リクエストを送信
+
+```
+$ curl http://127.0.0.1:8000/
+```
+
+---
+
+### デバッガ起動
+
+```
+> /working/advent-calendar-2016-python/proj/urls.py(7)top_view()
+-> return HttpResponse('OK')
+(Pdb)
+```
+
+---
+
+### タイムアウトに気をつける
+
+- Gunicornはリクエストをタイムアウトにする設定がある
+- デフォルトで30秒です
+- モタモタしているとタイムアウトで終了する
+
+```
+(Pdb) [2016-12-24 23:09:37 +0900] [9102] [CRITICAL] WORKER TIMEOUT (pid:9115)
+```
+
+---
+
+### タイムアウトを長くする
+
+```
+$ gunicorn proj.wsgi:application --timeout 9999999
+[2016-12-24 23:13:11 +0900] [9126] [INFO] Starting gunicorn 19.6.0
+[2016-12-24 23:13:11 +0900] [9126] [INFO] Listening at: http://127.0.0.1:8000 (9126)
+[2016-12-24 23:13:11 +0900] [9126] [INFO] Using worker: sync
+[2016-12-24 23:13:11 +0900] [9130] [INFO] Booting worker with pid: 9130
+> /working/advent-calendar-2016-python/proj/urls.py(7)top_view()
+-> return HttpResponse('OK')
+(Pdb)
+```
+
+@[1](--timeout でタイムアウトを設定)
+
+---
+
+- 様々な環境でのデバッグ方法
+  - ~~unittest~~
+  - ~~Django~~
+  - ~~Gunicorn~~
+  - 🍅 Celery
+  - Jupyter Notebook
+  - CircleCI
+  - リモート環境
+  - 本番環境
+
+---
+
+# Celery
+
+---
+
+- [Celery](https://docs.celeryproject.org)
+- ジョブキューフレームワーク
+- Brokerとして今回はRedisを使う
+
+
+---
+
+### サンプルコード
+
+tasks.py::
+
+```
+from celery import Celery
+from celery.contrib import rdb
+
+app = Celery('tasks', broker='redis://127.0.0.1/')
+
+
+@app.task
+def add(x, y):
+    rdb.set_trace()
+    return x + y
+```
+
+@[2,9](rdb.set_traceを使う)
+
+
+---
+
+### workerを起動
+
+```
+$ celery -A tasks.app worker
+
+ -------------- celery@ng-2.local v4.0.0 (latentcall)
+---- **** -----
+--- * ***  * -- Darwin-16.1.0-x86_64-i386-64bit 2016-12-24 23:23:27
+-- * - **** ---
+- ** ---------- [config]
+- ** ---------- .> app:         tasks:0x1042b4940
+- ** ---------- .> transport:   redis://127.0.0.1:6379//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** -----
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+```
+
+
+---
+
+タスクを発火します。
+
+```
+>>> import tasks
+>>> tasks.add.delay(1, 2)
+<AsyncResult: a07399f4-e28a-4471-b57d-30ce1cb3abf4>
+>>>
+```
+
+workerは `Remote Debugger:6900: Waiting for client...` というメッセージを表示する
+
+
+----
+
+### telnetでアクセス
+
+```
+$ telnet 127.0.0.1 6900
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+> /working/advent-calendar-2016-python/tasks.py(10)add()
+-> return x + y
+(Pdb) p x
+1
+(Pdb) p y
+2
+(Pdb)
+```
+
+---
+
+- 操作はpdbと同じ
+- タスクが終了するとworkerはポートを閉じる
+- Celeryの世界でデバッグしないような設計にしておくのも良い
+
+---
+
+- 様々な環境でのデバッグ方法
+  - ~~unittest~~
+  - ~~Django~~
+  - ~~Gunicorn~~
+  - ~~Celery~~
+  - 🍅 Jupyter Notebook
+  - CircleCI
+  - リモート環境
+  - 本番環境
+
+---
+
+# Jupyter Notebook
+
+---
+
+### Jupyter Notebook
+
+- Webブラウザ上でPythonを動かせる環境
+- 旧IPython notebook
+- みんな大好き
+
+---
+
+- `%debug` マジックコマンド を使う
+- pdbが起動する
+
+
+---
+
+- 様々な環境でのデバッグ方法
+  - ~~unittest~~
+  - ~~Django~~
+  - ~~Gunicorn~~
+  - ~~Celery~~
+  - ~~Jupyter Notebook~~
+  - 🍅 CircleCI
+  - リモート環境
+  - 本番環境
+
+---
+
+# CircleCI
+
+---
+
+### CircleCI
+
+- [Circle CI](https://circleci.com/)
+- CIサービス
+
+---
+
+### よくあるケース
+
+- CIでテストが失敗している
+- ただし原因が特定できない
+- CI上で確認したい
+
+---
+
+### `Rebuild With SSH`
+
+- SSHでログインできるようになる
+
+---
+
+- 様々な環境でのデバッグ方法
+  - ~~unittest~~
+  - ~~Django~~
+  - ~~Gunicorn~~
+  - ~~Celery~~
+  - ~~Jupyter Notebook~~
+  - ~~CircleCI~~
+  - 🍅 リモート環境
+  - 本番環境
+
+---
+
+# リモート環境でのデバッグ
+
+---
+
+sshでログインできるstaging環境がある場合、staging環境上でpdbを実行したい
+
+---
+
+例えばDjangoアプリケーションなら、
+staging上でpdb.set_trace()を記述して手動で開発サーバを適当なポート番号で起動し、
+ssh port forwardで開発サーバに繋げられるようにするのが手っ取り早いです。
+
+---
+
+### 開発サーバを起動
+
+
+```
+[staging]$ python manage.py runserver 4649
+```
+
+---
+
+### SSH Port Forward
+
+ssh port forwardでlocalhost:8000をstaging:4649に接続します。
+
+
+```
+$ ssh -L 8000:localhost:4649 staging
+```
+
+後はlocalhostでテストしているようにリクエストを送信します。
+
+---
+
+- 様々な環境でのデバッグ方法
+  - ~~unittest~~
+  - ~~Django~~
+  - ~~Gunicorn~~
+  - ~~Celery~~
+  - ~~Jupyter Notebook~~
+  - ~~CircleCI~~
+  - ~~リモート環境~~
+  - 🍅 本番環境
+
+---
+
+# 本番環境
+
+---
+
+# やめましょう
+# 事故ります
+
+---
+
 ### アジェンダ
 
 - ~~デバッグとは~~
