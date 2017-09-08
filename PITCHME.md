@@ -4,6 +4,8 @@
 
 ---
 
+### アジェンダ
+
 - デバッグとは
 - 実際にデバッグする |
 - 様々なデバッガの特徴 |
@@ -11,6 +13,8 @@
 - デバッグ関連の失敗談と対処方法 |
 
 ---
+
+### アジェンダ
 
 - 🍅 デバッグとは
 - 実際にデバッグする
@@ -41,6 +45,8 @@ Wikipediaより
 # 簡単
 
 ---
+
+### アジェンダ
 
 - ~~デバッグとは~~
 - 🍅 実際にデバッグする
@@ -308,6 +314,8 @@ printデバッグ
 
 ---
 
+### アジェンダ
+
 - ~~デバッグとは~~
 - ~~実際にデバッグする~~
 - 🍅 様々なデバッガの特徴
@@ -325,21 +333,16 @@ printデバッグ
 
 ---
 
-##### 僕らの武器
-#### printデバッグ
-
----
-
 ### printデバッグの特徴と問題点
 
 - 簡単で手っ取り早い
 - 複雑な処理を追いかけづらい
 - 表示してもよくわからないobjectもある
-- (例) <__main__.Testing object at 0x108c4e160> |
+- (例) <__main__.Testing object at 0x108c4e160>
 
  ⬇
 
-- 1行ずつ処理を確認しながら実行したい
+- 1行ずつ処理を確認しながら実行したい |
 - 実行中の変数も確認したい |
 
 ---
@@ -721,6 +724,8 @@ for ii in range(1, 21):
 
 @[5](pdb.set_traceを追加)
 
+---
+
 ### 実行
 
 ```
@@ -767,6 +772,15 @@ Fizz
 
 ---
 
+- 🍅 様々なデバッガの特徴
+  - ~~pdb~~
+  - ~~ipdb~~
+  - 🍅 bpdb
+  - pudb
+  - pycharm
+
+---
+
 # bpdb
 
 ---
@@ -778,6 +792,15 @@ Fizz
 - または `import bpdb; bpdb.set_trace()` をコード内に記述
 - 使用方法はほぼpdbと同じ
 - BでBPythonのInteractiveShellに入れる
+
+---
+
+- 🍅 様々なデバッガの特徴
+  - ~~pdb~~
+  - ~~ipdb~~
+  - ~~bpdb~~
+  - 🍅 pudb
+  - pycharm
 
 ---
 
@@ -828,6 +851,15 @@ wrap_variables = True
 
 ---
 
+- 🍅 様々なデバッガの特徴
+  - ~~pdb~~
+  - ~~ipdb~~
+  - ~~bpdb~~
+  - ~~pudb~~
+  - 🍅 pycharm
+
+---
+
 ### PyCharm
 
 - JetBrains社が開発したPythonのIDE
@@ -836,90 +868,320 @@ wrap_variables = True
 
 ---
 
-
-
-
-### デバッグとは...
-
-- コード量が多かったら...
-- 仕様が複雑だったら...
+- ~~様々なデバッガの特徴~~
+  - ~~pdb~~
+  - ~~ipdb~~
+  - ~~bpdb~~
+  - ~~pudb~~
+  - ~~pycharm~~
 
 ---
 
-### まとめ
+### アジェンダ
 
-今回は次のことを学びました。
+- ~~デバッグとは~~
+- ~~実際にデバッグする~~
+- ~~様々なデバッガの特徴~~
+- 🍅 様々な環境でのデバッグ方法
+- デバッグ関連の失敗談と対処方法
 
-- [x] デバッグとは何か
-- [x] printデバッグの方法と考え方
-- [x] 様々なデバッガ特徴 (pdb, ipdb, bpdb, pudb, pycharm)
-- [x] 様々な環境でのデバッグ方法(Django, Gunicorn, Celery, Jupyter notebook, pytest, nose, CircleCI)
-- [x] デバッグ関連の失敗談と対処方法
+---
 
-### 終わり
+- 様々な環境でのデバッグ方法
+  - 🍅 unittest
+  - Django
+  - Gunicorn
+  - Celery
+  - Jupyter Notebook
+  - CircleCI
+  - リモート環境
+  - 本番環境
 
-Enjoy DEBUG！！
+---
+
+テストが落ちるんだけど、その理由がわからない... |
+⬇ |
+test内に `pdb.set_trace()` を記述
+
+---
+
+test_main.py::
+
+```
+from unittest import TestCase
 
 
-##
+def create_message(count):
+    return 'Fish: {}'.format(count)
 
 
+class SimpleTest(TestCase):
+    def test_it(self):
+        import pdb; pdb.set_trace()  # デバッグコード
+        msg = create_message(1)
+        self.assertEqual(msg, 'Fish: 1')
+```
 
-- [ ] デバッグとは何か
-- [ ] デバッグする
-- [ ] デバッグでよく用いられるツールのメリット/デメリット
-  - print
-  - pdb
-  - ipdb
-  - bpdb
-  - pudb
-  - pycharm
-- [ ] 様々な環境でのデバッグ
-  - Djangoをデバッグする
-  - Gunicornで動いているPythonコードをデバッグする
-  - Celeryタスクをデバッグする
-  - Jupyter Notebbook上でデバッグする
-  - テストコードをデバッグする
-  - CI環境上でデバッグする(CircleCI)
-  -
-- [ ] デバッグでの失敗談
-  - pdbをコードの中に入れてしまった
+---
+
+unittestを実行するとpdbが起動します。
+
+```
+$ python -m unittest
+> /working/advent-calendar-2016-python/test_main.py(11)test_it()
+-> msg = create_message(1)
+(Pdb) list
+  6
+  7
+  8     class SimpleTest(TestCase):
+  9         def test_it(self):
+ 10             import pdb; pdb.set_trace()  # デバッグコード
+ 11  ->         msg = create_message(1)
+ 12             self.assertEqual(msg, 'Fish: 1')
+[EOF]
+(Pdb)
+```
+
+---
+
+## noseでデバッガを使う
+
+- [nose](https://nose.readthedocs.io/en/latest/)
+- テストフレームワーク
+- `--nocapture` を指定
+
+---
+
+```
+$ nosetests --nocapture
+> /working/advent-calendar-2016-python/test_main.py(11)test_it()
+-> msg = create_message(1)
+(Pdb)
+```
+
+---
+
+- `--pdb`: エラーもしくはフェイル時にpdbを起動
+- `--pdb-failures`: フェイル時にpdbを起動
+- `--pdb-errors`: エラー時にpdbを起動
+
+```
+$ nosetests --pdb
+> /Users/sximada/ng2/var/lib/miniconda3/envs/py3.5.2/lib/python3.5/unittest/case.py(665)fail()
+-> raise self.failureException(msg)
+(Pdb)
+```
+
+---
+
+## pytestでデバッガを使う
+
+- [nose](https://nose.readthedocs.io/en/latest/)
+- テストフレームワーク
+- `--nocapture` は指定しなくていい
+
+---
+
+### 実行
+
+```
+$ pytest
+================================================================================ test session starts ================================================================================
+platform darwin -- Python 3.5.2, pytest-3.0.5, py-1.4.32, pluggy-0.4.0
+rootdir: /working/advent-calendar-2016-python, inifile:
+plugins: celery-4.0.0
+collected 1 items
+
+test_main.py
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> PDB set_trace (IO-capturing turned off) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+> /working/advent-calendar-2016-python/test_main.py(11)test_it()
+-> msg = create_message(1)
+(Pdb)
+```
+
++++
+
+### 実行
+
+```
+$ pytest --pdb
+================================================================================ test session starts ================================================================================
+platform darwin -- Python 3.5.2, pytest-3.0.5, py-1.4.32, pluggy-0.4.0
+rootdir: /working/advent-calendar-2016-python, inifile:
+plugins: celery-4.0.0
+collected 2 items
+
+test_main.py F
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> traceback >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+self = <test_main.SimpleTest testMethod=test_error>
+
+    def test_error(self):
+        msg = create_message(1)
+>       self.assertEqual(msg, 'ERROR')
+E       AssertionError: 'Fish: 1' != 'ERROR'
+E       - Fish: 1
+E       + ERROR
+
+test_main.py:15: AssertionError
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> entering PDB >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+> /Users/sximada/ng2/var/lib/miniconda3/envs/py3.5.2/lib/python3.5/unittest/case.py(665)fail()
+-> raise self.failureException(msg)
+(Pdb)
+```
+
+---
+
+### アジェンダ
+
+- ~~デバッグとは~~
+- ~~実際にデバッグする~~
+- ~~様々なデバッガの特徴~~
+- ~~様々な環境でのデバッグ方法~~
+- 🍅 デバッグ関連の失敗談と対処方法
+
+---
+
+- デバッグ関連の失敗談と対処方法
+  - 🍅 pdbをコードの中に入れてしまった
   - デバッグしにくいコードになってしまった
   - loggerでちゃんとログを出しておけばデバッガでデバッグする必要がなかった
-- [ ] まとめ
 
+---
+
+### pdbをコードの中に入れてしまった
+
+---
+
+- pdbはデバッグコード、コミットしてはいけない
+- うっかりデプロイしてしまうとその行が実行された瞬間に処理が停止してしまう
+
+---
+
+### 防止方法
+
+- gitのコミットフックで防止
+- Danger (CI) で防止
+
+---
+
+- デバッグ関連の失敗談と対処方法
+  - ~~pdbをコードの中に入れてしまった~~
+  - 🍅 デバッグしにくいコードになってしまった
+  - loggerでちゃんとログを出しておけばデバッガでデバッグする必要がなかった
+
+---
+
+### デバッグしにくいコード
+
+---
+
+- lambdaがいっぱいのコード
+- 内包表記がごついコード
 
 
 ---
 
-# Pycon JP 2017
+- デバッグ関連の失敗談と対処方法
+  - ~~pdbをコードの中に入れてしまった~~
+  - ~~デバッグしにくいコードになってしまった~~
+  - 🍅 loggerでちゃんとログを出しておけばデバッガでデバッグする必要がなかった
 
-## Pythonデバッグ入門
+---
+
+### そもそもデバッグなんか必要のないコード
 
 ---
 
-# デバッグ
-
-今日のテーマはデバッグです。
-
-みなさん、デバッグしていますか？
-
-ここにいるみなさんはPythonを普段書いていたり、これから書こうと思っている人が多いと思います。
-
-Pythonを書いて実行すると、エラーで処理が停止したり、思い通りの動きをしなかったりすることがありますね。
-
-それがバグです。
-
-これはPythonに限らず他の言語でも同じようにバグに遭遇します。
-
-もちろんバグに遭遇しないにこしたことはありませんし、バグを作らないようにするべきです。
-
-誰もバグを好きでつくているわけではありません。
-
-それでもバグは生まれ、潜んでいます。
-
-このバグを探し出し取り除くことをデバッグと言います。
-
-このデバッグの方法を今日は色々と紹介していきます。
+- デバッグは時間がかかる
+- 適切にログが出力されていたら調査の必要すらない
 
 ---
+
+### 例
+
+```
+import requests
+
+def get_payload():
+    try:
+        res = requests.get('https://example.com')
+        if res.status_code == requests.status.status_ok:
+            return res.json()
+    except:
+        pass
+```
+
+@[5,7](ここで例外が発生する可能性がある)
+@[8-9](例外を無視している -> どんな例外が出たか全くわからない)
+
+---
+
+### 握り潰している....
+
+---
+
+### 例外を握り潰さないために
+
+```
+import logging
+import requests
+
+logger = logging.getLogger(__name__)
+
+def get_payload():
+    try:
+        res = requests.get('https://example.com')
+        if res.status_code == requests.status.status_ok:
+            return res.json()
+    except:
+        logger.exception('Oops!!')
+
+```
+
+@[1,4](ロガーを作成)
+@[8,10](例外が発生)
+@[11-12](メッセージがStack Traceとともにloggerに送られる)
+
+---
+
+#### ログを出すことでデバッグするまでもなくなる
+#### 適切にログを出そう |
+
+---
+
+- デバッグ関連の失敗談と対処方法
+  - ~~pdbをコードの中に入れてしまった~~
+  - ~~デバッグしにくいコードになってしまった~~
+  - ~~loggerでちゃんとログを出しておけばデバッガでデバッグする必要がなかった~~
+
+
+---
+
+### アジェンダ
+
+- ~~デバッグとは~~
+- ~~実際にデバッグする~~
+- ~~様々なデバッガの特徴~~
+- ~~様々な環境でのデバッグ方法~~
+- ~~デバッグ関連の失敗談と対処方法~~
+
+---
+
+# まとめ
+
+---
+
+### 学んだこと
+
+- デバッグはバグを発見修正すること
+- デバッグのツールの使い方
+- 実行環境ごとのデバッグの手法
+- よくないデバッグを避ける方法
+
+---
+
+### みんなやろうよ
+### DEBUG！！
+
+###### 🍅  終わり 🍅
