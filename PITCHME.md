@@ -1,6 +1,7 @@
 ---
 
-# Pythonにおけるデバッグ手法
+# Pythonにおける
+# デバッグ手法
 
 ---
 
@@ -9,8 +10,13 @@
 - 嶋田健志
 - Twitter: @TakesxiSximada
 - PythonとEmacs大好き
-- 執筆
-  - Pythonファーストブック
+
++++
+
+### 自己紹介
+
+- 共著
+  - Pythonエンジニア ファーストブック
   - Pythonエンジニア養成読本
 - 監修
   - Pythonではじめるデータビジュアライゼーション
@@ -43,7 +49,7 @@
 
 デバッグ（debug）とは、コンピュータプログラムや電気機器中のバグ・欠陥を発見および修正し、動作を仕様通りのものとするための作業である。
 
-Wikipediaより
+[Wikipedia](https://ja.wikipedia.org/wiki/%E3%83%87%E3%83%90%E3%83%83%E3%82%B0)より
 
 ---
 
@@ -51,16 +57,6 @@ Wikipediaより
 
 - 発見する
 - 修正する
-
----
-
-### アジェンダ
-
-- ~~デバッグとは~~
-- 🍅 実際にデバッグする
-- 様々なデバッガの特徴
-- 様々な環境でのデバッグ方法
-- デバッグ関連の失敗談と対処方法
 
 ---
 
@@ -99,17 +95,40 @@ for ii in range(1, 21):
 
 ---
 
-実行してみる
+### 実行してみる
 
----?code=fizzbuzz_stdout_1.log
+```
+$ python fizzbuzz.py
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+```
 
++++
 
-+++?code=fizzbuzz_stdout_2.log
+### 続き
 
----
+```
+11
+Fizz
+13
+14
+Fizz
+16
+17
+Fizz
+19
+Buzz
+```
 
-- `FizzBuzz` という表示が1個もない
-- どこが悪いのかを調べる |
+`FizzBuzz` という表示が1個もない
 
 ---
 
