@@ -1,6 +1,6 @@
 ---
 
-![ipdb](images/bpdb.png)
+![ipdb](images/pudb.png)
 
 ---
 
@@ -837,6 +837,10 @@ $ pudb3 example_fizzbuzz_buggy.py
 ```
 
 `C-x` でデバッガのペインとインタラクティブシェルのペインを移動できる
+
+---
+
+![ipdb](images/pudb.png)
 
 ---
 
