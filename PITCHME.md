@@ -1,6 +1,24 @@
 ---
 
-![ipdb](images/pudb.png)
+![pycharm](images/pycharm-1.png)
+
++++
+
+![pycharm](images/pycharm-2.png)
+
++++
+
+![pycharm](images/pycharm-3.png)
+
++++
+
+![pycharm](images/pycharm-4.png)
+
++++
+
+![pycharm](images/pycharm-5.png)
+
++++
 
 ---
 
@@ -822,6 +840,7 @@ Fizz
 
 ---
 
+- https://documen.tician.de/pudb/
 - コンソール上で使える高機能なデバッガ
 - `pip install pudb`
 - 設定ファイル ~/.config/pudb/pudb.cfg
