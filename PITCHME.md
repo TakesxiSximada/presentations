@@ -665,9 +665,9 @@ Fizz
 
 ---
 
-c RET c RET c RET c RET c RET
-c RET c RET c RET c RET c RET
-c RET c RET c RET c RET
+c RET RET RET RET RET
+RET RET RET RET RET
+RET RET RET RET
 
 
 大変だ...
@@ -714,7 +714,7 @@ Clear all breaks?
 
 ---
 
-### 他のコマンド
+### コマンド
 
 
 - h: ヘルプを表示
@@ -789,6 +789,10 @@ Fizz
 - `import ipdb; ipdb.set_trace()`
 - 使用方法はほぼpdbと同じ
 - interactでIPythonのInteractiveShellに入れる
+
+---
+
+![ipdb](images/ipdb-start.png)
 
 ---
 
