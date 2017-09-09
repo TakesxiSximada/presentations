@@ -1,24 +1,8 @@
 ---
 
+### break pointの設定
+
 ![pycharm](images/pycharm-1.png)
-
-+++
-
-![pycharm](images/pycharm-2.png)
-
-+++
-
-![pycharm](images/pycharm-3.png)
-
-+++
-
-![pycharm](images/pycharm-4.png)
-
-+++
-
-![pycharm](images/pycharm-5.png)
-
-+++
 
 ---
 
@@ -812,7 +796,7 @@ Fizz
 - 使用方法はほぼpdbと同じ
 - interactでIPythonのInteractiveShellに入れる
 
----
++++
 
 ![ipdb](images/ipdb-upstart.png)
 
@@ -830,9 +814,9 @@ Fizz
 - 使用方法はほぼpdbと同じ
 - BでBPythonのInteractiveShellに入れる
 
----
++++
 
-![ipdb](images/bpdb.png)
+![bpdb](images/bpdb.png)
 
 ---
 
@@ -849,7 +833,7 @@ Fizz
 
 ### 実行
 
-pudb3コマンド(Python3の場合)がつかえるようになる。
+pudb3コマンド(Python3の場合)で実行
 
 ```
 $ pudb3 example_fizzbuzz_buggy.py
@@ -857,11 +841,11 @@ $ pudb3 example_fizzbuzz_buggy.py
 
 `C-x` でデバッガのペインとインタラクティブシェルのペインを移動できる
 
----
++++
 
 ![ipdb](images/pudb.png)
 
----
++++
 
 ### 設定ファイル
 
@@ -893,6 +877,37 @@ wrap_variables = True
 - JetBrains社が開発したPythonのIDE
 - GUI操作
 - とっても直感的
+
++++
+
+### break pointの設定
+
+![pycharm](images/pycharm-1.png)
+
++++
+
+### 実行
+
+![pycharm](images/pycharm-2.png)
+
++++
+
+### 虫マーク
+
+![pycharm](images/pycharm-3.png)
+
++++
+
+### 停止
+
+![pycharm](images/pycharm-4.png)
+
++++
+
+### 操作パネル
+
+![pycharm](images/pycharm-5.png)
+
 
 ---
 
@@ -961,9 +976,9 @@ $ python -m unittest
 
 ---
 
-## noseでデバッガを使う
+## nose
 
-- [nose](https://nose.readthedocs.io/en/latest/)
+- https://nose.readthedocs.io/en/latest/
 - テストフレームワーク
 - `--nocapture` を指定
 
@@ -991,83 +1006,13 @@ $ nosetests --pdb
 
 ---
 
-## pytestでデバッガを使う
-
-- [nose](https://nose.readthedocs.io/en/latest/)
-- テストフレームワーク
-- `--nocapture` は指定しなくていい
-
----
-
-### 実行
-
-```
-$ pytest
-================================================================================ test session starts ================================================================================
-platform darwin -- Python 3.5.2, pytest-3.0.5, py-1.4.32, pluggy-0.4.0
-rootdir: /working, inifile:
-plugins: celery-4.0.0
-collected 1 items
-
-test_main.py
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> PDB set_trace (IO-capturing turned off) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-> /working/test_main.py(11)test_it()
--> msg = create_message(1)
-(Pdb)
-```
-
-+++
-
-### 実行
-
-```
-$ pytest --pdb
-================================================================================ test session starts ================================================================================
-platform darwin -- Python 3.5.2, pytest-3.0.5, py-1.4.32, pluggy-0.4.0
-rootdir: /working, inifile:
-plugins: celery-4.0.0
-collected 2 items
-
-test_main.py F
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> traceback >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-self = <test_main.SimpleTest testMethod=test_error>
-
-    def test_error(self):
-        msg = create_message(1)
->       self.assertEqual(msg, 'ERROR')
-E       AssertionError: 'Fish: 1' != 'ERROR'
-E       - Fish: 1
-E       + ERROR
-
-test_main.py:15: AssertionError
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> entering PDB >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-> /Users/sximada/ng2/var/lib/miniconda3/envs/py3.5.2/lib/python3.5/unittest/case.py(665)fail()
--> raise self.failureException(msg)
-(Pdb)
-```
-
----
-
-- 様々な環境でのデバッグ方法
-  - ~~unittest~~
-  - 🍅 Django
-  - Gunicorn
-  - Celery
-  - Jupyter Notebook
-  - CircleCI
-  - リモート環境
-  - 本番環境
-
----
-
 # Django
 
 ---
 
 ### Django
 
-- [Django](https://www.djangoproject.com/)
+- https://www.djangoproject.com/
 - ウェブフレームワーク
 
 ---
@@ -1148,27 +1093,13 @@ $ curl http://127.0.0.1:8000/
 
 ---
 
-- 様々な環境でのデバッグ方法
-  - ~~unittest~~
-  - ~~Django~~
-  - 🍅 Gunicorn
-  - Celery
-  - Jupyter Notebook
-  - CircleCI
-  - リモート環境
-  - 本番環境
-
-
----
-
 # Gunicorn
 
 ---
 
-- [gunicorn](http://gunicorn.org/)
+- http://gunicorn.org/
 - WSGI HTTP Server
 - 今回は先ほどのDjango Projectを [gunicorn](http://gunicorn.org/) で実行する
-
 
 ---
 
@@ -1176,10 +1107,10 @@ $ curl http://127.0.0.1:8000/
 
 ```
 $ gunicorn proj.wsgi:application
-[2016-12-24 22:53:59 +0900] [8915] [INFO] Starting gunicorn 19.6.0
-[2016-12-24 22:53:59 +0900] [8915] [INFO] Listening at: http://127.0.0.1:8000 (8915)
-[2016-12-24 22:53:59 +0900] [8915] [INFO] Using worker: sync
-[2016-12-24 22:53:59 +0900] [8918] [INFO] Booting worker with pid: 8918
+[2017-08-24 22:53:59 +0900] [8915] [INFO] Starting gunicorn 19.6.0
+[2017-08-24 22:53:59 +0900] [8915] [INFO] Listening at: http://127.0.0.1:8000 (8915)
+[2017-08-24 22:53:59 +0900] [8915] [INFO] Using worker: sync
+[2017-08-24 22:53:59 +0900] [8918] [INFO] Booting worker with pid: 8918
 ```
 
 ---
@@ -1209,7 +1140,7 @@ $ curl http://127.0.0.1:8000/
 - モタモタしているとタイムアウトで終了する
 
 ```
-(Pdb) [2016-12-24 23:09:37 +0900] [9102] [CRITICAL] WORKER TIMEOUT (pid:9115)
+(Pdb) [2017-08-24 23:09:37 +0900] [9102] [CRITICAL] WORKER TIMEOUT (pid:9115)
 ```
 
 ---
@@ -1218,28 +1149,16 @@ $ curl http://127.0.0.1:8000/
 
 ```
 $ gunicorn proj.wsgi:application --timeout 9999999
-[2016-12-24 23:13:11 +0900] [9126] [INFO] Starting gunicorn 19.6.0
-[2016-12-24 23:13:11 +0900] [9126] [INFO] Listening at: http://127.0.0.1:8000 (9126)
-[2016-12-24 23:13:11 +0900] [9126] [INFO] Using worker: sync
-[2016-12-24 23:13:11 +0900] [9130] [INFO] Booting worker with pid: 9130
+[2017-08-24 23:13:11 +0900] [9126] [INFO] Starting gunicorn 19.6.0
+[2017-08-24 23:13:11 +0900] [9126] [INFO] Listening at: http://127.0.0.1:8000 (9126)
+[2017-08-24 23:13:11 +0900] [9126] [INFO] Using worker: sync
+[2017-08-24 23:13:11 +0900] [9130] [INFO] Booting worker with pid: 9130
 > /working/proj/urls.py(7)top_view()
 -> return HttpResponse('OK')
 (Pdb)
 ```
 
 @[1](--timeout でタイムアウトを設定)
-
----
-
-- 様々な環境でのデバッグ方法
-  - ~~unittest~~
-  - ~~Django~~
-  - ~~Gunicorn~~
-  - 🍅 Celery
-  - Jupyter Notebook
-  - CircleCI
-  - リモート環境
-  - 本番環境
 
 ---
 
