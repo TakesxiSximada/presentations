@@ -178,7 +178,7 @@ for ii in range(1, 21):
 ##### 実行
 
 ```
-$ python  example_fizzbuzz.py
+$ python  fizzbuzz.py
 CURRENT: 1
 1
 CURRENT: 2
@@ -291,7 +291,7 @@ for ii in range(1, 21):
 ###### 実行
 
 ```
-$ python example_fizzbuzz.py
+$ python fizzbuzz.py
 CURRENT: 1
 1
 CURRENT: 2
@@ -757,12 +757,12 @@ for ii in range(1, 21):
 ### 実行
 
 ```
-$ python fizzbuzz_pdb.py
+$ python fizzbuzz.py
 1
 2
 Fizz
 4
-> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz_pdb.py(6)<module>()
+> /Users/sximada/src/github.com/TakesxiSximada/presentations/fizzbuzz.py(6)<module>()
 -> print('Buzz')
 (Pdb)
 ```
@@ -829,7 +829,7 @@ Fizz
 pudb3コマンド(Python3の場合)で実行
 
 ```
-$ pudb3 example_fizzbuzz_buggy.py
+$ pudb3 fizzbuzz.py
 ```
 
 `C-x` でデバッガのペインとインタラクティブシェルのペインを移動できる
@@ -1313,12 +1313,16 @@ Escape character is '^]'.
 ### 学んだこと
 
 - デバッグはバグをみつけてなおすこと
-- デバッグのツールは色々ある (pdb/ipdb/bpdb/pudb/pycharm)
+- デバッグのツールは色々ある (pdb, ipdb, bpdb, pudb, pycharm)
 - 実行環境ごとにちょっとしたつまづきポイントがある
   - noseのnocapture
   - gunicornのtimeout
   - celeryのrdb
-- 色々やって見るしかない
+- 手に馴染むものを使うのが良い
+
+---
+
+###### 🍅終わり🍅
 
 ---
 
@@ -1362,10 +1366,9 @@ obj = [(ii + jj + kk)
 ]
 ```
 
----
 
-- 頑張って内包表記を使おうとするな
-- 内包表記の中で複雑な計算をするな
+- 頑張って内包表記を使わない
+- 内包表記の中で複雑な計算しない
 
 ---
 
