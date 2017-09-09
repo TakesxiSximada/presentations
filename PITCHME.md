@@ -1,5 +1,7 @@
 ---
 
+### 起動
+
 ![ipdb](images/ipdb-upstart.png)
 
 ---
@@ -796,7 +798,9 @@ Fizz
 
 ---
 
-![ipdb](images/ipdb-start.png)
+### 起動
+
+![ipdb](images/ipdb-upstart.png)
 
 ---
 
