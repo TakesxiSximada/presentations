@@ -1,9 +1,5 @@
 ---
 
-![circleci](images/circleci.png)
-
----
-
 # Pythonにおける
 # デバッグ手法
 
@@ -14,7 +10,7 @@
 - 嶋田健志
 - Twitter: @TakesxiSximada
 - PythonとEmacs大好き
-- フリーランスのWebエンジニア
+- Webエンジニア
 
 +++
 
