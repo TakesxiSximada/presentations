@@ -1,8 +1,6 @@
 ---
 
-### 起動
-
-![ipdb](images/ipdb-upstart.png)
+![ipdb](images/bpdb.png)
 
 ---
 
@@ -798,8 +796,6 @@ Fizz
 
 ---
 
-### 起動
-
 ![ipdb](images/ipdb-upstart.png)
 
 ---
@@ -815,6 +811,10 @@ Fizz
 - または `import bpdb; bpdb.set_trace()` をコード内に記述
 - 使用方法はほぼpdbと同じ
 - BでBPythonのInteractiveShellに入れる
+
+---
+
+![ipdb](images/bpdb.png)
 
 ---
 
