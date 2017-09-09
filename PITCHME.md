@@ -1,6 +1,6 @@
 ---
 
-![jupyter](images/jupyter.png)
+![circleci](images/circleci.png)
 
 ---
 
@@ -1295,6 +1295,10 @@ Escape character is '^]'.
 ### `Rebuild With SSH`
 
 - SSHでログインできるようになる
+
++++
+
+![circleci](images/circleci.png)
 
 ---
 
