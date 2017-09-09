@@ -1,8 +1,6 @@
 ---
 
-### break pointの設定
-
-![pycharm](images/pycharm-1.png)
+![jupyter](images/jupyter.png)
 
 ---
 
@@ -1167,9 +1165,7 @@ $ gunicorn proj.wsgi:application --timeout 9999999
 ---
 
 - [Celery](https://docs.celeryproject.org)
-- ジョブキューフレームワーク
-- Brokerとして今回はRedisを使う
-
+- 非同期ジョブキューフレームワーク
 
 ---
 
@@ -1192,7 +1188,6 @@ def add(x, y):
 
 @[2,9](rdb.set_traceを使う)
 
-
 ---
 
 ### workerを起動
@@ -1202,7 +1197,7 @@ $ celery -A tasks.app worker
 
  -------------- celery@ng-2.local v4.0.0 (latentcall)
 ---- **** -----
---- * ***  * -- Darwin-16.1.0-x86_64-i386-64bit 2016-12-24 23:23:27
+--- * ***  * -- Darwin-16.1.0-x86_64-i386-64bit 2017-09-01 11:23:27
 -- * - **** ---
 - ** ---------- [config]
 - ** ---------- .> app:         tasks:0x1042b4940
@@ -1256,18 +1251,6 @@ Escape character is '^]'.
 
 ---
 
-- 様々な環境でのデバッグ方法
-  - ~~unittest~~
-  - ~~Django~~
-  - ~~Gunicorn~~
-  - ~~Celery~~
-  - 🍅 Jupyter Notebook
-  - CircleCI
-  - リモート環境
-  - 本番環境
-
----
-
 # Jupyter Notebook
 
 ---
@@ -1283,18 +1266,10 @@ Escape character is '^]'.
 - `%debug` マジックコマンド を使う
 - pdbが起動する
 
++++
 
----
+![jupyter](images/jupyter.png)
 
-- 様々な環境でのデバッグ方法
-  - ~~unittest~~
-  - ~~Django~~
-  - ~~Gunicorn~~
-  - ~~Celery~~
-  - ~~Jupyter Notebook~~
-  - 🍅 CircleCI
-  - リモート環境
-  - 本番環境
 
 ---
 
@@ -1304,7 +1279,7 @@ Escape character is '^]'.
 
 ### CircleCI
 
-- [Circle CI](https://circleci.com/)
+- https://circleci.com/
 - CIサービス
 
 ---
