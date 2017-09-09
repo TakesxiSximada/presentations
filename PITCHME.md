@@ -1415,8 +1415,7 @@ logger = logging.getLogger(__name__)
 def get_payload():
     try:
         res = requests.get('https://example.com')
-        if res.status_code == requests.status.status_ok:
-            return res.json()
+        return res.json()
     except:
         logger.exception('Oops!!')
 
