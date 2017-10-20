@@ -133,22 +133,228 @@ Type "help", "copyright", "credits" or "license" for more information.
 @[3-7](接続)
 @[8](テキスト "Hello world!" をPepperに送信)
 
-
-
 ---
 
 ## ダイアログ
 
 ![](images/screen-2017-10-20-17.44.22.png)
 
-----
+ロボットが発話する内容は `ロボット: xxxx` という形で表示されます。
 
-## 簡単なPepperチュートリアル
+---
 
-とりあえず何か話させてみる
+## ALTextToSpeech以外を使ってみる
+
+- せっかく色々Pepperを制御できるので色々触ってみましょう。
+
+---
+
+## Pepperを動かす
+
+- Pepperには足元にホイールが付いているので躯体を移動できる
+- ホイールの制御には `ALMotion` を使う
+- http://doc.aldebaran.com/2-1/naoqi/motion/index.html
+
+---
+
+## 接続
+
+```
+>>> motion = ALProxy('ALMotion', '127.0.0.1', 56838)
+[I] 1508492002.065112 775 qimessaging.session: Session listener created on tcp:/
+/0.0.0.0:0
+[I] 1508492002.065938 775 qimessaging.transportserver: TransportServer will list
+en on: tcp://10.27.40.30:56852
+[I] 1508492002.065968 775 qimessaging.transportserver: TransportServer will list
+en on: tcp://127.0.0.1:56852
+[I] 1508492002.065981 775 qimessaging.transportserver: TransportServer will list
+en on: tcp://192.168.99.1:56852
+>>>
+```
+
+---
+
+## 前進/後退/停止
+
+### 前進
+
+```
+>>> motion.moveToward(0.1,0.0,0.0)
+```
+
+### 後退
+
+```
+>>> motion.moveToward(-0.1,0.0,0.0)
+```
+
+### 停止
+
+```
+>>> motion.moveToward(0.0,0.0,0.0)
+```
+
+---
+
+## 左右
+
+### 左
+
+```
+>>> motion.moveToward(0.0,0.0,0.0)
+```
+
+### 右
+
+```
+>>> motion.moveToward(0.0,-0.1,0.0)
+```
+
+### 停止
+
+```
+>>> motion.moveToward(0.0,0.0,0.0)
+```
+
+---
+
+## 回転
+
+### 回れ右方向
+
+```
+>>> motion.moveToward(0.0,0.0,-0.1)
+```
+
+### 回れ左方向
+
+```
+>>> motion.moveToward(0.0,0.0,0.1)
+```
+
+### 停止
+
+```
+>>> motion.moveToward(0.0,0.0,0.0)
+```
+
+---
+
+## 障害物を避けながら目的地に移動する
+
+- Pepperは目的地までの経路に障害物があるとそれを避けて動くナビゲーション機能が提供されている
+- `ALNavigation` を使う
+- http://doc.aldebaran.com/2-1/naoqi/motion/alnavigation-api.html#ALNavigationProxy::navigateTo__floatCR.floatCR
 
 
 ---
+
+## 障害物を避けながら目的地に移動する
+
+```
+>>> nav = ALProxy('ALNavigation', '127.0.0.1', 56838)
+>>> nav.navigateTo(1, 1)
+True
+```
+
+`nav.navigateTo(x, y)`
+
+- x: 前後方向をfloatで指定(単位はメートル)。
+- y: 左右方向をfloatで指定(単位はメートル)。
+- 座標を指定するとまずは躯体を回転させて最短経路で移動
+- 移動経路中に障害物があると回避
+
+
+
+---
+
+## ポーズをとってみる
+
+
+```
+>>> pos = ALProxy('ALRobotPosture', '127.0.0.1', 56838)
+>>> pos.goToPosture('StandZero', 1.0)
+True
+>>> pos.goToPosture('Stand', 1.0)
+True
+>>> pos.goToPosture('StandInit', 1.0)
+True
+```
+
+- 最初は次のポーズしかない
+  - StandZero
+  - Standinit
+  - Stand
+  - Crouch
+- ポーズは自分でも作成できる
+- 存在しないポーズを指定した場合はFalseがreturnされる
+
+![](images/screen-2017-10-20-19.22.28.png)
+
+---
+
+## Pepperの目を光らせる
+
+- ALProxy経由でPepperの目を光らせてみます
+- LEDの操作なので `AllLeds` を使う
+- http://doc.aldebaran.com/2-1/naoqi/sensors/alleds-api.html?highlight=alled#ALLedsProxy
+
+---
+
+## 接続する
+
+```
+>>> leds = ALProxy('ALLeds', '127.0.0.1', 54264)
+```
+
+
+---
+
+## LEDグループ名を取得する
+
+LEDには各パーツごとにLEDがいくつも付いています。それを一つずつ制御するのは大変なのでグループが作成できます。Pepperではすでにグループがいくつも作成されています。そのグループを取得してみましょう。
+
+```
+>>> leds.listGroups()
+['AllLeds', 'AllLedsBlue', 'AllLedsGreen', 'AllLedsRed', 'ChestLeds', 'EarLed1', 'EarLed10', 'EarLed
+2', 'EarLed3', 'EarLed4', 'EarLed5', 'EarLed6', 'EarLed7', 'EarLed8', 'EarLed9', 'EarLeds', 'FaceLed
+0', 'FaceLed1', 'FaceLed2', 'FaceLed3', 'FaceLed4', 'FaceLed5', 'FaceLed6', 'FaceLed7', 'FaceLedLeft
+0', 'FaceLedLeft1', 'FaceLedLeft2', 'FaceLedLeft3', 'FaceLedLeft4', 'FaceLedLeft5', 'FaceLedLeft6',
+'FaceLedLeft7', 'FaceLedRight0', 'FaceLedRight1', 'FaceLedRight2', 'FaceLedRight3', 'FaceLedRight4',
+ 'FaceLedRight5', 'FaceLedRight6', 'FaceLedRight7', 'FaceLeds', 'FaceLedsBottom', 'FaceLedsExternal'
+, 'FaceLedsInternal', 'FaceLedsLeftBottom', 'FaceLedsLeftExternal', 'FaceLedsLeftInternal', 'FaceLed
+sLeftTop', 'FaceLedsRightBottom', 'FaceLedsRightExternal', 'FaceLedsRightInternal', 'FaceLedsRightTo
+p', 'FaceLedsTop', 'LeftEarLeds', 'LeftEarLedsBack', 'LeftEarLedsEven', 'LeftEarLedsFront', 'LeftEar
+LedsOdd', 'LeftFaceLeds', 'LeftFaceLedsBlue', 'LeftFaceLedsGreen', 'LeftFaceLedsRed', 'RightEarLeds'
+, 'RightEarLedsBack', 'RightEarLedsEven', 'RightEarLedsFront', 'RightEarLedsOdd', 'RightFaceLeds', '
+RightFaceLedsBlue', 'RightFaceLedsGreen', 'RightFaceLedsRed']
+```
+
+---
+
+## 全てのLEDを初期化する
+
+AllLedsグループは全てのLEDを含んでいます。 `.reset()` を使って初期化しましょう。
+
+```
+>>> leds.reset('AllLeds')
+>>>
+```
+
+---
+
+## 顔のLEDを光らせる
+
+```
+>>> leds.fadeRGB('FaceLeds', 0xffb361, 0.1)
+```
+
+
+
+
+
+
+
 
 ## Pythonのインストール
 
