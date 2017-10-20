@@ -121,20 +121,17 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> tts = ALProxy("ALTextToSpeech", "127.0.0.1", 54264)
 [I] 1508488962.246104 775 qimessaging.session: Session listener created on tcp://0.0.0.0:0
 [W] 1508488962.247009 4099 qi.path.sdklayout: No Application was created, trying to deduce paths
-[I] 1508488962.247033 775 qimessaging.transportserver: TransportServer will listen on: tcp://10.27.4
-0.30:55925
-[I] 1508488962.247048 775 qimessaging.transportserver: TransportServer will listen on: tcp://127.0.0
-.1:55925
-[I] 1508488962.247056 775 qimessaging.transportserver: TransportServer will listen on: tcp://192.168
-.99.1:55925
+[I] 1508488962.247033 775 qimessaging.transportserver: TransportServer will listen on: tcp://10.27.40.30:55925
+[I] 1508488962.247048 775 qimessaging.transportserver: TransportServer will listen on: tcp://127.0.0.1:55925
+[I] 1508488962.247056 775 qimessaging.transportserver: TransportServer will listen on: tcp://192.168.99.1:55925
 >>> tts.say("Hello, world!")
 >>>
 ```
 
-@[1] ALProxyをインポート
-@[2] 第一引数はALTextToSpeech、第二引数はIPアドレス、第三引数はポート番号
-@[3-7] 接続
-@[8] テキスト "Hello world!" をPepperに送信
+@[1](ALProxyをインポート)
+@[2](第一引数はALTextToSpeech、第二引数はIPアドレス、第三引数はポート番号)
+@[3-7](接続)
+@[8](テキスト "Hello world!" をPepperに送信)
 
 
 
