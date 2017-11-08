@@ -102,8 +102,10 @@ Hello World
 
 ## Naoqi(ナオキ)のインストール
 
-- PythonからPepperとの接続をするためのライブラリ
+- PythonからPepperに接続をするためのライブラリ
 - [pynaoqiのインストールガイド](http://doc.aldebaran.com/2-5/dev/python/install_guide.html)
+- https://community.aldebaran.com/en/resources/software からダウンロード
+  (アカウントの登録が必要)
 - 必要なライブラリのファイルをダウンロードしてきて `$HOME/src/var/` 配下に解凍する
   (展開する場所はどこでもいいが、今回は `$HOME/src/var/` に固定する )
 
