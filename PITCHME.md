@@ -72,13 +72,15 @@ https://www.python.org/downloads/
 
 ## PythonでHello World
 
-hello_world.py をテキストエディタで開いて次を記述する。
+テキストエディタで開いて記述します。
+
+hello_world.py:
 
 ```
 print 'Hello World'
 ```
 
-記述したら、ファイルを保存する。
+記述したら、ファイルを保存します。
 
 ---
 
