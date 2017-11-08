@@ -201,7 +201,7 @@ python -m naoqia
 
 バーチャルロボットを使ってローカル環境でペッパーの操作を行う
 
-<img src="screen-2017-10-20-16.49.43.png" width="400" />
+<img src="images/screen-2017-10-20-16.49.43.png" width="400" />
 
 ---
 
