@@ -111,7 +111,7 @@ Hello World
 
 ---
 
-## Naoqiへのライブラリパスを通す
+## pynaoqiの設定
 
 - Pythonではライブラリのインストールは通常pipを使って行う
 - pynaoqiはpipを使ってのインストール方法が準備されていない
@@ -119,7 +119,8 @@ Hello World
 
 ---
 
-## pynaoqiへのライブラリパスを通す
+## pynaoqiの設定
+
 
 ```
 $ export PYTHONPATH=${PYTHONPATH}:${HOME}/src/var/pynaoqi-python2.7-2.5.5.5-mac64/lib/python2.7/site-packages
@@ -179,7 +180,7 @@ python -m naoqia
 - ライセンスキーを持っていればライセンスキーを入力します。
 - 今回は `試用期間を継続します。` を選択します。
 
-![](images/screen-2017-10-20-16.18.16.png)
+<img src="images/screen-2017-10-20-16.18.16.png" width="400">
 
 ---
 
@@ -187,7 +188,7 @@ python -m naoqia
 
 起動するとこのような画面になります。
 
-![](images/screen-2017-10-20-16.32.11.png)
+<img src="images/screen-2017-10-20-16.32.11.png" width="400" />
 
 ---
 
@@ -200,7 +201,7 @@ python -m naoqia
 
 バーチャルロボットを使ってローカル環境でペッパーの操作を行う
 
-![](images/screen-2017-10-20-16.49.43.png)
+<img src="screen-2017-10-20-16.49.43.png" width="400" />
 
 ---
 
@@ -244,7 +245,8 @@ python -m naoqia
 
 ## ダイアログ
 
-![](images/screen-2017-10-20-17.44.22.png)
+<img src="images/screen-2017-10-20-17.44.22.png" width="400" />
+
 
 ロボットが発話する内容は `ロボット: xxxx` という形で表示されます。
 
