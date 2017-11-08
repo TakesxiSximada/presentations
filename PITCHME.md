@@ -55,9 +55,11 @@ bash: python: command not found
 
 ## Pythonのインストール
 
+
 https://www.python.org/downloads/
 
-![](images/screen-2017-11-08-15.46.01.png =400x)
+<img src="/images/screen-2017-11-08-15.46.01.png" width="48">
+
 
 +++
 
