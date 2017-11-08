@@ -58,7 +58,7 @@ bash: python: command not found
 
 https://www.python.org/downloads/
 
-<img src="/images/screen-2017-11-08-15.46.01.png" width="48">
+<img src="/images/screen-2017-11-08-15.46.01.png" width="400">
 
 
 +++
