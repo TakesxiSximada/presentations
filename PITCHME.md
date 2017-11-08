@@ -247,7 +247,6 @@ python -m naoqia
 
 <img src="images/screen-2017-10-20-17.44.22.png" width="400" />
 
-
 ロボットが発話する内容は `ロボット: xxxx` という形で表示されます。
 
 ---
@@ -396,7 +395,7 @@ True
 - ポーズは自分でも作成できる
 - 存在しないポーズを指定した場合はFalseがreturnされる
 
-![](images/screen-2017-10-20-19.22.28.png)
+<img src="images/screen-2017-10-20-19.22.28.png" width="400" />
 
 ---
 
@@ -622,36 +621,32 @@ jupyter notebook
 
 ## Jupyter notebookの起動画面
 
-![jupyter notebook top](images/screen-2017-11-08-17.32.08.png)
+<img src="images/screen-2017-11-08-17.32.08.png" width="400" />
 
 ---
 
 ## Pythonを起動
 
 
-![jupyterでpython起動](images/screen-2017-11-08-17.32.36.png)
-
+<img src="images/screen-2017-11-08-17.32.36.png" width="400" />
 
 ---
 
 ## Jupyter notebookのnotebook画面
 
-
-![notebook画面](images/screen-2017-11-08-17.32.46.png)
+<img src="images/screen-2017-11-08-17.32.46.png" width="400" />
 
 ---
 
 ## Jupyter notebook上でpepperを制御
 
-![jupyter notebook上でpepperを制御](images/screen-2017-11-08-17.34.56.png)
+<img src="images/screen-2017-11-08-17.34.56.png" width="400" />
 
 ---
 
 ## バーチャルロボットのダイアログ
 
-
-![jupyter notebook上でpepperを制御](images/screen-2017-11-08-17.35.04.png)
-
+<img src="images/screen-2017-11-08-17.35.04.png" width="400" />
 
 
 ---
@@ -662,9 +657,12 @@ jupyter notebook
 - http://doc.aldebaran.com/1-14/getting_started/helloworld_python.html
 
 
-
-
 ---
+
+# おしまい
+
+
++++
 
 ## このハンズオンの狙い
 
