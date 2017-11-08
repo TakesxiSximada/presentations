@@ -90,7 +90,8 @@ print 'Hello World'
 hello_world.py を実行します。
 
 
-ターミナルに `python ファイル名` と入力してエンターキーを押します。
+ターミナルに `python ファイル名` と入力して
+エンターキーを押します。
 
 ```
 $ python hello_world.py
