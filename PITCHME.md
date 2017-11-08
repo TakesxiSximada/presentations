@@ -16,34 +16,19 @@
 
 ## 環境
 
-この資料は以下の環境を前提に作成しています。
-他の環境をお使いの場合はサポートできない可能性があります。
+以下の環境を前提に作成しています。
+他の環境をお使いの場合は
+サポートできない可能性があります。
 
 - OS: macOS Sierra 10.12.4
 - Python: Python 2.7
 
 ---
 
-## このハンズオンの狙い
-
-- Python
-  - Pythonの環境を作る
-  - Pythonスクリプトを書いて実行できるようになる
-  - Pythonのインストーラや仮想環境周りの扱いに触れる
-- Pepper
-  - Pepperの開発環境 Choregraphe(コレグラフ) を入手する
-  - Pythonライブラリ Naoqi(ナオキ) を入手する
-  - Naoqiを使ってPepperを操作する
-- 応用
-  - Jupyter Notebookからやって見る
-  - アプリを作成する
-
----
-
 ## Python 2.7 or 3.x ？
 
 - Pythonには2.x系と3.x系がある
-- NaoqiはPython3.xに対応していない
+- pynaoqiはPython3.xに対応していない
 - そのためPython2.xを使わざるをえない
 
 ---
@@ -51,7 +36,7 @@
 ## Pythonのバージョンを確認する
 
 ```
-$ python -V
+bash-3.2$ python -V
 Python 2.7.13
 ```
 
@@ -72,7 +57,7 @@ bash: python: command not found
 
 https://www.python.org/downloads/
 
-![](images/screen-2017-11-08-15.46.01.png)
+![](images/screen-2017-11-08-15.46.01.png =400x)
 
 +++
 
@@ -662,3 +647,22 @@ jupyter notebook
 
 - http://doc.aldebaran.com/2-5/dev/python/install_guide.html
 - http://doc.aldebaran.com/1-14/getting_started/helloworld_python.html
+
+
+
+
+---
+
+## このハンズオンの狙い
+
+- Python
+  - Pythonの環境を作る
+  - Pythonスクリプトを書いて実行できるようになる
+  - Pythonのインストーラや仮想環境周りの扱いに触れる
+- Pepper
+  - Pepperの開発環境 Choregraphe(コレグラフ) を入手する
+  - Pythonライブラリ Naoqi(ナオキ) を入手する
+  - Naoqiを使ってPepperを操作する
+- 応用
+  - Jupyter Notebookからやって見る
+  - アプリを作成する
