@@ -74,7 +74,8 @@ https://www.python.org/downloads/
 
 テキストエディタで開いて記述します。
 
-hello_world.py:
+
+hello_world.py
 
 ```
 print 'Hello World'
@@ -86,7 +87,10 @@ print 'Hello World'
 
 ## Pythonを実行する
 
-先ほど作成した hello_world.py を実行します。ターミナルに `python ファイル名` と記述してエンターキーを押すと実行します。
+hello_world.py を実行します。
+
+
+ターミナルに `python ファイル名` と入力してエンターキーを押します。
 
 ```
 $ python hello_world.py
