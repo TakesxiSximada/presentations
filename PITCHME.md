@@ -7,8 +7,8 @@
 
 ## 今日のゴール
 
-- [ ] Pepperの開発環境を構築する
 - [ ] Pythonの開発環境を構築する
+- [ ] Pepperの開発環境を構築する
 - [ ] Pepperを動かす
 - [ ] Pepper + Pythonでプログラムを書いて実行する
 
@@ -27,12 +27,9 @@
 - スクリプト言語
 - 最近機械学習のおかげですごい流行っている
 
-
 ---
 
 ## Choregrapheのインストール
-
-
 
 ---
 
@@ -49,7 +46,6 @@
 - 今回は `試用期間を継続します。` を選択します。
 
 ![](images/screen-2017-10-20-16.18.16.png)
-
 
 ---
 
@@ -75,6 +71,7 @@
 - このポート番号につなぐことでPepperを遠隔で操作可能
 - pynaoqiでは外部からPepperに接続してPepperを操作する機能が提供されている
 - [pynaoqiのインストールガイド](http://doc.aldebaran.com/2-5/dev/python/install_guide.html)
+
 
 ---
 
@@ -391,6 +388,31 @@ $ python
 
 ---
 
+## Jupyter Notebook上でNaoqiを使ってみよう
+
+---
+
+## The Jupyter Notebook
+
+
+The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
+
+※ http://jupyter.org/ 抜粋
+
++++
+
+## The Jupyter Notebook
+
+
+Jupyterノートブックは、ライブコード、方程式、視覚化、物語テキストを含むドキュメ
+ントを作成して共有できるオープンソースのWebアプリケーションです。データの消去と
+変換、数値シミュレーション、統計モデリング、データの視覚化、機械学習などがそれに
+含まれます。
+
+※ http://jupyter.org/ 翻訳
+
+---
+
 ### Editing
 
 - [Pythonデバッグ入門](https://gitpitch.com/TakesxiSximada/presentations/python-debug-tips)
@@ -402,3 +424,7 @@ $ python
 
 - http://doc.aldebaran.com/2-5/dev/python/install_guide.html
 - http://doc.aldebaran.com/1-14/getting_started/helloworld_python.html
+
+
+
+## 時間が余ったら
