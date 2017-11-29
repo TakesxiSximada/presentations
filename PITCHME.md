@@ -607,6 +607,8 @@ Requirement already satisfied: jupyter in ./venv/lib/python2.7/site-packages
 - `jupyter notebook` で起動する
 - 起動したらブラウザで `http://localhost:8888` を表示する (だいたい自動的に開く)
 
++++
+
 ```
 (venv) bash-3.2$ jupyter notebook
 jupyter notebook
