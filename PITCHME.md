@@ -389,11 +389,12 @@ True
 
 +++
 
-- 最初は次のポーズしかない
-  - StandZero
-  - Standinit
-  - Stand
-  - Crouch
+## 最初は次のポーズしかない
+
+- StandZero
+- Standinit
+- Stand
+- Crouch
 
 +++
 
