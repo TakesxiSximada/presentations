@@ -445,6 +445,8 @@ True
 
 LEDには各パーツごとにLEDがいくつも付いています。それを一つずつ制御するのは大変なのでグループが作成できます。Pepperではすでにグループがいくつも作成されています。そのグループを取得してみましょう。
 
++++
+
 ```
 >>> leds.listGroups()
 ['AllLeds', 'AllLedsBlue', 'AllLedsGreen', 'AllLedsRed', 'ChestLeds', 'EarLed1', 'EarLed10', 'EarLed
