@@ -179,6 +179,7 @@ python -m naoqia
 
 - ライセンスキーを持っていればライセンスキーを入力します。
 - 今回は `試用期間を継続します。` を選択します。
+- 公開ライセンスキー https://developer.softbankrobotics.com/jp-ja/downloads/pepper
 
 <img src="images/screen-2017-10-20-16.18.16.png" width="400">
 
