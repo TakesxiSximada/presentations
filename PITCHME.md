@@ -387,11 +387,16 @@ True
 True
 ```
 
++++
+
 - 最初は次のポーズしかない
   - StandZero
   - Standinit
   - Stand
   - Crouch
+
++++
+
 - ポーズは自分でも作成できる
 - 存在しないポーズを指定した場合はFalseがreturnされる
 
