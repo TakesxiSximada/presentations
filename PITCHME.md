@@ -72,7 +72,7 @@ https://www.activestate.com/activepython
 
 ### Guippyを使って
 
-- 複数のWindow、ダイアログにまたがる操作を自動化
+- 複数のWindowにまたがる操作
 - 結果をtextに出力
 
 +++
