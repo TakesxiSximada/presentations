@@ -79,10 +79,9 @@ https://www.activestate.com/activepython
 
 ### 複数のExcelファイル
 
-- ファイルサーバのあちこちに
-  似たようなフォーマットのExcelが点在
-- 微細なフォーマットのズレなどがあるので
-  それを合わせる
+- 似たようなフォーマットのExcel
+- いろんなファイルサーバに点在
+- 微細なフォーマットのズレ
 - Excelを回収してIronPythonで処理
 - Summaryを出す
 
