@@ -44,14 +44,14 @@ https://www.activestate.com/activepython
 
 - TCP Dummy Server
 - 分散しているExcelファイルの集計処理
-- GUI操作
+- GUI操作自動化
 - 自動化DSL
 
 などなど...
 
 +++
 
-#### GUI操作
+### GUI操作自動化
 
 ---
 
