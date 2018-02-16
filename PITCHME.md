@@ -36,20 +36,20 @@ https://www.activestate.com/activepython
 +++
 
 #### データフォーマット
-
 #### チェッカー
 
----
++++
 
-## 今までどんなことにPythonを使ったか
+#### その他書いたもの
 
-- データフォーマットチェック
 - TCP Dummy Server
 - 分散しているExcelファイルの集計処理
 - GUI操作
-- 分散しているExcelの集計
 - 自動化DSL
-- その他いろいろ
+
++++
+
+#### GUI操作
 
 ---
 
