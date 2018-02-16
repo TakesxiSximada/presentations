@@ -149,4 +149,4 @@ https://github.com/TakesxiSximada
 
 ## 素振りをどこでやるか
 
-家 or 職場 or 勉強会 ？
+家 or 勉強会 ？
