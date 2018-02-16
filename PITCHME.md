@@ -47,6 +47,8 @@ https://www.activestate.com/activepython
 - GUI操作
 - 自動化DSL
 
+などなど...
+
 +++
 
 #### GUI操作
