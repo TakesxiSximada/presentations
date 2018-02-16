@@ -77,9 +77,12 @@ https://www.activestate.com/activepython
 
 +++
 
-### 分散しているExcelファイルの集計処理
+### 複数のExcelファイル
 
-- ファイルサーバのあちこちに似たようなフォーマットのExcelが点在
+- ファイルサーバのあちこちに
+  似たようなフォーマットのExcelが点在
+- 微細なフォーマットのズレなどがあるので
+  それを合わせる
 - Excelを回収してIronPythonで処理
 - Summaryを出す
 
