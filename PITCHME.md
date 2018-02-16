@@ -55,6 +55,9 @@ https://www.activestate.com/activepython
 
 - GUI操作自動化ライブラリ
 - https://pypi.python.org/pypi/guippy
+- キーボード操作
+- クリップボードの操作
+- マウスポインタの操作
 - Win32 APIを呼び出し
 - ctypesモジュール
 - Pure Python
