@@ -55,7 +55,8 @@ https://www.activestate.com/activepython
 
 - GUI操作自動化ライブラリ
 - https://pypi.python.org/pypi/guippy
-- ctypesモジュールを経由してWin32 APIを呼び出し
+- Win32 APIを呼び出し
+- ctypesモジュール
 - Pure Python
 
 ---
