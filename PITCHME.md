@@ -68,7 +68,15 @@ https://www.activestate.com/activepython
 - ctypesモジュール
 - Pure Python
 
----
++++
+
+### Guippyを使って
+
+- 複数のWindow、ダイアログにまたがる操作を自動化
+- 結果をtextに出力
+
+
++++
 
 # 業務効率化の事例
 
