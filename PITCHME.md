@@ -75,6 +75,23 @@ https://www.activestate.com/activepython
 - 複数のWindow、ダイアログにまたがる操作を自動化
 - 結果をtextに出力
 
++++
+
+### 分散しているExcelファイルの集計処理
+
+- ファイルサーバのあちこちに似たようなフォーマットのExcelが点在
+- Excelを回収してIronPythonで処理
+- Summaryを出す
+
++++
+
+### IronPython
+
+http://ironpython.net/
+
+Python2.7....
+
+
 
 +++
 
