@@ -58,6 +58,11 @@ https://www.activestate.com/activepython
 - キーボード操作
 - クリップボードの操作
 - マウスポインタの操作
+
++++
+
+### Guippyの実装
+
 - Win32 APIを呼び出し
 - ctypesモジュール
 - Pure Python
