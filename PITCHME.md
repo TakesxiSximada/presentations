@@ -1,15 +1,15 @@
-# IT技術者わいわい交流会
+# IT技術者
+# わいわい交流会
 
-嶋田健志
-(@TakesxiSximada)
+嶋田健志 (@TakesxiSximada)
 
 ---
 
 ## 自己紹介
 
-- @TakesxiSximada
 - Webエンジニア
-- Python/Emacsが好き
+- Emacs大好き
+- Python/Djangoを用いたWeb開発が多い
 
 ---
 
@@ -23,15 +23,17 @@
 - どのように技術を使ってきたか
 - スキルアップのためにどんなことをしているのか
 
-
 ---
 
 ## Pythonとの出会い
 
-- ActivePython
-- テストプログラム
-- 自動化
-- Web
++++
+
+### ActivePython
+
++++
+
+
 
 ---
 
