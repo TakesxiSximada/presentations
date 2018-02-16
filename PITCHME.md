@@ -35,7 +35,8 @@ https://www.activestate.com/activepython
 
 +++
 
-### データフォーマットチェッカー
+#### データフォーマット
+#### チェッカー
 
 ---
 
