@@ -51,7 +51,11 @@ https://www.activestate.com/activepython
 
 +++
 
-### GUI操作自動化
+### Guippy
+
+- GUI操作自動化ライブラリ
+- https://pypi.python.org/pypi/guippy
+
 
 ---
 
