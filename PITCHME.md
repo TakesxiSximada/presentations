@@ -79,8 +79,8 @@ https://www.activestate.com/activepython
 
 ### 複数のExcelファイル
 
-- 似たようなフォーマットのExcel
 - いろんなファイルサーバに点在
+- 似たようなフォーマットのExcel
 - 微細なフォーマットのズレ
 - Excelを回収してIronPythonで処理
 - Summaryを出す
@@ -93,6 +93,9 @@ http://ironpython.net/
 
 Python2.7....
 
++++
+
+### 今ならpandasとかを使うのも良さそう
 
 
 +++
