@@ -172,7 +172,7 @@ https://github.com/TakesxiSximada
 
 +++
 
-## 勉強会(スピーチっぽいスタイル)
+## 勉強会
 
 - 話を聞く
 - もしくは話す
