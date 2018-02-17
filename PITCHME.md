@@ -208,6 +208,8 @@ https://github.com/TakesxiSximada
 
 ## 開発の裏話
 
++++
+
 2018年1月....
 
 +++
