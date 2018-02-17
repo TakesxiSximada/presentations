@@ -145,7 +145,7 @@ https://github.com/TakesxiSximada
 
 +++
 
-## スキルアップや素振りをどこでやるか
+## スキルアップをどこでやるか
 
 会社 or 家 or 勉強会 ？
 
