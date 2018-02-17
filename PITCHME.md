@@ -317,6 +317,31 @@ https://discordapp.com/
 
 +++
 
+## Pythonのデバッグ
+
+
++++
+
+```
+def testing():
+    import pdb; pdb.set_trace()
+    print('one')
+    print('two')
+    print('three')
+    return 1 + 1
+```
+
+`import pdb; pdb.set_trace()** この行で停止する
+
++++
+
+```
+testing()
+```
+
++++
+
+
 ## 資料あります
 
 
@@ -326,7 +351,7 @@ https://www.youtube.com/watch?v=w5767tzZwxI
 
 +++
 
-## Emacsのデバッグツール
+## Emacsのデバッグ
 
 +++
 
@@ -350,6 +375,9 @@ edebug
   (message "three")
   (+ 1 1))
 ```
+
+このコードをedebug-defunで評価すると、この関数が呼び出されたときにそこで処理を停止してstep実行できるようになります。
+
 
 +++
 
