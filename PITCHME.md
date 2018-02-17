@@ -179,6 +179,7 @@ https://github.com/TakesxiSximada
 - まとまった情報が聞けて良い
 - 作業はしない
 
++++
 
 ## もくもく会
 
@@ -186,6 +187,7 @@ https://github.com/TakesxiSximada
 - テーマに沿った中で自分の好きなことをする
 - 最後にちょっとした発表がある
 
++++
 
 ## ハンズオン
 
@@ -194,6 +196,8 @@ https://github.com/TakesxiSximada
 - 自由度は少ない
 - 講師やTAとして参加するのも良いかも
 - ただ準備は大変
+
++++
 
 ## ハッカソン
 
