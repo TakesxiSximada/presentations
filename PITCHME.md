@@ -222,6 +222,8 @@ https://github.com/TakesxiSximada
 
 discord便利だ
 
+https://discordapp.com/
+
 +++
 
 - 音声chat
