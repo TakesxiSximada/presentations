@@ -331,7 +331,7 @@ def testing():
     return 1 + 1
 ```
 
-`import pdb; pdb.set_trace()** この行で停止する
+`import pdb; pdb.set_trace()` この行で停止する
 
 +++
 
@@ -344,9 +344,11 @@ testing()
 
 ## 資料あります
 
-
+qiita
 https://qiita.com/TakesxiSximada/items/45b6d71a44f2706798ed
+スライド
 https://gitpitch.com/TakesxiSximada/presentations/python-debug-tips#/
+動画
 https://www.youtube.com/watch?v=w5767tzZwxI
 
 +++
