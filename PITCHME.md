@@ -14,14 +14,6 @@
 
 ---
 
-## 内容
-
-- どのように技術を使い始めたか
-- どのように技術を使ってきたか
-- スキルアップのために
-
----
-
 ## Pythonとの出会い
 
 +++
@@ -32,19 +24,19 @@ https://www.activestate.com/activepython
 
 +++
 
-#### データフォーマット
-#### チェッカー
+#### 書いたもの
 
-+++
-
-#### その他書いたもの
-
+- データフォーマットチェッカー
 - TCP Dummy Server
 - 分散しているExcelファイルの集計処理
 - GUI操作自動化
 - 自動化DSL
 
 などなど...
+
++++
+
+幾つか紹介
 
 +++
 
@@ -93,6 +85,13 @@ Python2.7....
 +++
 
 ### 今ならもっと違うアプローチもあるかも
+
++++
+
+### 書いて公開してを繰り返して...
+
+
+<img src="/images/pypi.png" width="400">
 
 ---
 
@@ -479,7 +478,8 @@ $ dlv debug testing.go
 $ dlv debug testing.go
 Type 'help' for list of commands.
 (dlv)
-``**
+```
+
 
 +++
 
