@@ -227,7 +227,7 @@ https://github.com/TakesxiSximada
 
 +++
 
-- 初めてのPerl 第7版 [NEW]
+- 【NEW】初めてのPerl 第7版
 - PythonとJavaScriptではじめるデータビジュアライゼーション
 - Pythonではじめるデータラングリング
 - PythonによるWebスクレイピング
