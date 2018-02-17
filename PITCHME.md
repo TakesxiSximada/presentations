@@ -261,8 +261,8 @@ https://discordapp.com/
 
 ## 例えば...
 
-- 良い: `できます。`
-- 悪い: `することができます。`
+- 良い: `できます。**
+- 悪い: `することができます。**
 
 +++
 
@@ -285,6 +285,86 @@ https://discordapp.com/
 いろんな言語、言うほど使えません。
 
 +++
+
+##  Hello World!
+
+これでインストールとか起動とかの方法を覚える
+
++++
+
+つぎはどうしよう
+
++++
+
+## デバッグ方法を調べる
+
+- プログラムを書くときにデバッグの方法を知っておくとすごい捗る
+- インタラクティブに扱えるのが良い
+
++++
+
+今回はいくつかの言語のデバッガを調べてみました。
+
++++
+
+## Pythonのデバッグツール
+
+- pdb
+- ipdb
+- bpdb
+- pudb
+- PyCharm
+
++++
+
+## 資料あります
+
+
+https://qiita.com/TakesxiSximada/items/45b6d71a44f2706798ed
+https://gitpitch.com/TakesxiSximada/presentations/python-debug-tips#/
+https://www.youtube.com/watch?v=w5767tzZwxI
+
++++
+
+## Emacsのデバッグツール
+
++++
+
+edebug
+
++++
+
+```init.el
+  ;; キーバインド
+  (bind-keys :map emacs-lisp-mode-map
+             ("C-x C-d" . edebug-defun))
+
+```
+
++++
+
+```
+(defun testing ()
+  (message "one")
+  (message "two")
+  (message "three")
+  (+ 1 1))
+```
+
++++
+
+```
+(testing) ;; C-x C-e
+```
+
++++
+
+<img src="/images/edebug.png" width="400">
+
+
++++
+
+
 
 
 ---
