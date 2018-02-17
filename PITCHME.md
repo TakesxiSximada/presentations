@@ -361,7 +361,9 @@ edebug
 
 +++
 
-```init.el
+init.el
+
+```
   ;; キーバインド
   (bind-keys :map emacs-lisp-mode-map
              ("C-x C-d" . edebug-defun))
@@ -391,11 +393,147 @@ edebug
 
 <img src="/images/edebug.png" width="400">
 
++++
+
+## Rubyのデバッグ
+
+- byebug <- 今回はこれを使った
+- pry-byebug
+- pry-debugger
+
+```
+$ gem install byebug
+```
+
++++
+
+```
+def testing()
+  require 'byebug'; byebug
+  puts "one"
+  puts "two"
+  puts "three"
+  return 1 + 1
+end
+
+testing
+```
+
++++
+
+```
+$ ruby testing.rb
+
+[1, 9] in /Users/sximada/Desktop/presentations/testing.rb
+   1: def testing()
+   2:   require 'byebug'; byebug
+=> 3:   puts "one"
+   4:   puts "two"
+   5:   puts "three"
+   6:   return 1 + 1
+   7: end
+   8:
+   9: testing
+```
+
++++
+
+## Golangのデバッグ
+
++++
+
+## delve
+
+```
+$ go get github.com/derekparker/delve/cmd/dlv
+```
+
++++
+
+```
+package main
+
+import "fmt"
+
+func testing() int {
+	fmt.Println("one")
+	fmt.Println("two")
+	fmt.Println("three")
+	return 1 + 1
+}
+
+func main() {
+	testing()
+}
+```
+
++++
+
+```
+$ dlv debug testing.go
+```
+
++++
+
+```
+$ dlv debug testing.go
+Type 'help' for list of commands.
+(dlv)
+``**
+
++++
+
+# Elixirのデバッグ
+
++++
+
+## IEx.pry
 
 +++
 
 
+```
+defmodule Testing do
+  def testing do
+    require IEx; IEx.pry
+    IO.puts "one"
+    IO.puts "two"
+    IO.puts "three"
+    1 + 1
+  end
+end
 
+Testing.testing
+```
+
++++
+
+```
+$ iex  testing.exs
+Erlang/OTP 20 [erts-9.1.4] [source] [64-bit] [smp:4:4] [ds:4:4:10] [async-threads:10] [hipe] [kernel-poll:false] [dtrace]
+
+Request to pry #PID<0.83.0> at Testing.testing/0 (testing.exs:3)
+
+    1: defmodule Testing do
+    2:   def testing do
+    3:     require IEx; IEx.pry
+    4:     IO.puts "one"
+    5:     IO.puts "two"
+
+Allow? [Yn] Y
+Interactive Elixir (1.5.2) - press Ctrl+C to exit (type h() ENTER for help)
+pry(1)> respawn
+```
+
++++
+
+- 今回は次の言語のデバッグを試してみた
+  - Python
+  - Emacs Lisp
+  - Ruby
+  - Go
+  - Elixir
+- もう少しいろいろ試して見るのも面白いかも
 
 ---
 
