@@ -12,9 +12,47 @@
 - Python/Djangoを用いたWeb開発が多い
 - もうすぐ12万トゥート@しむどん
 
+
 ---
 
-## Pythonとの出会い
+## 普段どんな仕事をしてるいの？
+
++++
+
+- Webシステム
+- Python多め
+- kubernetesいいね
+- 1月はvuejsむっちゃ書いた
+
++++
+
+2018年1月....
+
++++
+
+- 毎日夜24時にdiscordで進捗共有
+- そのまま繋いで作業
+- ふええ
+
++++
+
+discord便利だ
+
+https://discordapp.com/
+
++++
+
+- 音声chat
+- つなげっぱなし
+- リモートワークのチーム運営
+
++++
+
+おちこんだりもしたけれど、私はげんきです。
+
+---
+
+## Pythonを使ったきっかけ
 
 +++
 
@@ -66,6 +104,11 @@ https://www.activestate.com/activepython
 
 +++
 
+
+もう一つ紹介
+
++++
+
 ### 複数のExcelファイル
 
 - いろんなファイルサーバに点在
@@ -97,7 +140,7 @@ https://pypi.python.org/pypi?%3Aaction=search&term=TakesxiSximada&submit=search
 
 ---
 
-## スキルアップのために
+## スキルアップどうしてる？
 
 +++
 
@@ -174,7 +217,7 @@ https://pypi.python.org/pypi?%3Aaction=search&term=TakesxiSximada&submit=search
 
 +++
 
-## 大切な一人で素振り
+## 大切な一人での素振り
 
 - 興味を持ったトピックに飛びつく
   - トピックはなんでも良い
@@ -205,33 +248,7 @@ https://github.com/TakesxiSximada
 殆どがゴミリポジトリ
 でもそれでいいと思う
 
----
-
-## 開発の裏話
-
 +++
-
-2018年1月....
-
-+++
-
-- 毎日夜24時にdiscordで進捗共有
-- そのまま繋いで作業
-- ふええ
-
-+++
-
-discord便利だ
-
-https://discordapp.com/
-
-+++
-
-- 音声chat
-- つなげっぱなし
-- リモートワークのチーム運営
-
----
 
 ## 書籍関連
 
@@ -346,8 +363,10 @@ testing()
 
 ##### qiita
 https://qiita.com/TakesxiSximada/items/45b6d71a44f2706798ed
+
 ##### スライド
 https://gitpitch.com/TakesxiSximada/presentations/python-debug-tips#/
+
 ##### 動画
 https://www.youtube.com/watch?v=w5767tzZwxI
 
@@ -528,13 +547,12 @@ pry(1)> respawn
 
 +++
 
-- 今回は次の言語のデバッグを試してみた
+今回は次の言語のデバッグを試してみた
   - Python
   - Emacs Lisp
   - Ruby
   - Go
   - Elixir
-- もう少しいろいろ試して見るのも面白いかも
 
 ---
 
