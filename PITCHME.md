@@ -93,6 +93,8 @@ Python2.7....
 
 <img src="/images/pypi.png" width="400">
 
+https://pypi.python.org/pypi?%3Aaction=search&term=TakesxiSximada&submit=search
+
 ---
 
 ## スキルアップのために
