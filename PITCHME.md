@@ -210,6 +210,12 @@ https://github.com/TakesxiSximada
 
 2018年1月....
 
++++
+
+- 毎日夜24時にdiscordで進捗共有
+- そのまま繋いで作業
+- ふええ
+
 ---
 
 ## 書籍関連
