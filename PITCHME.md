@@ -245,4 +245,4 @@ https://github.com/TakesxiSximada
 
 +++
 
-作業中にupdateされる言語・ライブラリ
+作業中にアップデートされる言語・ライブラリ
