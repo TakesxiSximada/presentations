@@ -308,18 +308,17 @@ https://discordapp.com/
 
 +++
 
+## Pythonのデバッグ
+
++++
+
 ## Pythonのデバッグツール
 
-- pdb
+- pdb <- 今回はこれを使う
 - ipdb
 - bpdb
 - pudb
 - PyCharm
-
-+++
-
-## Pythonのデバッグ
-
 
 +++
 
@@ -345,11 +344,11 @@ testing()
 
 ## 資料あります
 
-qiita
+##### qiita
 https://qiita.com/TakesxiSximada/items/45b6d71a44f2706798ed
-スライド
+##### スライド
 https://gitpitch.com/TakesxiSximada/presentations/python-debug-tips#/
-動画
+##### 動画
 https://www.youtube.com/watch?v=w5767tzZwxI
 
 +++
