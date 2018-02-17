@@ -220,12 +220,17 @@ https://github.com/TakesxiSximada
 
 ## 今までに関わった書籍
 
-- Pythonエンジニア要請読本
++++
+
 - Pythonエンジニアファーストブック
-- PythonによるWebスクレイピング
-- Pythonではじめるデータラングリング
-- PythonとJavaScriptではじめるデータビジュアライゼーション
+- Pythonエンジニア養成読本
+
++++
+
 - 初めてのPerl 第7版 [NEW]
+- PythonとJavaScriptではじめるデータビジュアライゼーション
+- Pythonではじめるデータラングリング
+- PythonによるWebスクレイピング
 
 +++
 
