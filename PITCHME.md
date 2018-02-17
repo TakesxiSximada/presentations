@@ -218,6 +218,16 @@ https://github.com/TakesxiSximada
 - そのまま繋いで作業
 - ふええ
 
++++
+
+discord便利だ
+
++++
+
+- 音声chat
+- つなげっぱなし
+- リモートワークのチーム運営
+
 ---
 
 ## 書籍関連
