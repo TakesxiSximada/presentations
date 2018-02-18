@@ -228,18 +228,6 @@ https://pypi.python.org/pypi?%3Aaction=search&term=TakesxiSximada&submit=search
 
 +++
 
-## 余談：人生のテーマ
-
-- 好きな時に
-- 好きな場所でに
-- 好きな人と
-- 好きな事を
-- 好きなだけ
-
-ちょっとエモすぎ....
-
-+++
-
 ## その結果どうなるか
 
 Github Repository 249
