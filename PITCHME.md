@@ -65,12 +65,25 @@ https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfg
 
 +++
 
-- Vim: vim-rest-console
-- Sublime: rester-sublime-http-client
-- VS Code: Rest Client Mode
+# vim-rest-console
+
+https://github.com/diepm/vim-rest-console
+(Vim)
 
 +++
 
+# rester-sublime-http-client
+
+https://github.com/pjdietz/rester-sublime-http-client
+(Sublime)
+
+
+# vscode-restclient
+
+https://github.com/Huachao/vscode-restclient
+(VS Code)
+
++++
 
 # cUrl ?
 
@@ -179,7 +192,7 @@ env.el は git には含めず env.el.example として配布
 - 送信スクリプトをgitに入れることで検証がしやすくなる
 - レスポンスも送信スクリプトに近い位置にあるとイメージが付きやすい
 - なるべく実リクエストに近い形式のものが良い
-- 設定がチューリング完全じゃないとダメ
+- チューリング完全大事
 
 +++
 
@@ -189,3 +202,5 @@ env.el は git には含めず env.el.example として配布
 
 ### 手に馴染んだもの
 ### を使えば良い
+
+おわり
