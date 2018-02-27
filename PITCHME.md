@@ -153,10 +153,8 @@ https://github.com/rest-client/rest-client
 
 +++
 
-# restclient.el
-
-HTTP REST client tool for emacs
-emacsのためのHTTP RESTクライアントツール
+### HTTP REST client tool for emacs
+### emacsのためのHTTP RESTクライアントツール
 
 +++
 
