@@ -33,6 +33,10 @@ GET http://www.redmine.org/issues.xml?limit=10
 GET http://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png
 
 
+# Cookie
+# (setq restclient-inhibit-cookies nil)
+
+
 # GET
 GET :GITHUB_URL
 User-Agent: Emacs Restclient

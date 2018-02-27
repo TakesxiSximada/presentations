@@ -84,13 +84,13 @@ Emacsには古の時代からhttp-modeがある
 
 +++
 
-# rest-client
+# restclient.el
 
 https://github.com/rest-client/rest-client
 
 +++
 
-# rest-client
+# restclient.el
 
 HTTP REST client tool for emacs
 emacsのためのHTTP RESTクライアントツール
@@ -133,6 +133,12 @@ M-x package-istall restclient RET
 
 +++
 
+# cookie
+
+(setq restclient-inhibit-cookies t)
+
++++
+
 # 変数の扱い
 
 +++
@@ -141,7 +147,8 @@ M-x package-istall restclient RET
 
 +++
 
-# Lispが記述できる
+# Lispが
+# 記述できる
 
 +++
 
@@ -150,3 +157,23 @@ M-x package-istall restclient RET
 +++
 
 env.el は git には含めず env.el.example として配布
+
++++
+
+まとめ
+
++++
+
+- 送信スクリプトをgitに入れることで検証がしやすくなる
+- レスポンスも送信スクリプトに近い位置にあるとイメージが付きやすい
+- なるべく実リクエストに近い形式のものが良い
+- 設定がチューリング完全じゃないとダメ
+
++++
+
+# 結論
+
++++
+
+### 手に馴染んだもの
+### を使えば良い
