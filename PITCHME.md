@@ -111,7 +111,7 @@ https://curl.haxx.se/
 
 +++
 
-<img alt="" src="/images/emacs.png" width="800">
+<img alt="" src="/images/emacs-gnu.png" width="600">
 
 +++
 
