@@ -66,7 +66,7 @@ https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfg
 
 +++
 
-## エディタやIDEのプラグインを使っている？
+## エディタやIDEのプラグイン
 
 +++
 
@@ -97,7 +97,7 @@ https://github.com/Huachao/vscode-restclient
 
 +++
 
-# cUrl ?
+# cUrl
 
 https://curl.haxx.se/
 
