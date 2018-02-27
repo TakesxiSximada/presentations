@@ -62,7 +62,7 @@ https://www.getpostman.com/
 
 https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo?hl=ja
 
-<img alt="" src="/images/crhome.png" width="200">
+<img alt="" src="/images/chrome.png" width="200">
 
 +++
 
@@ -85,6 +85,8 @@ https://github.com/pjdietz/rester-sublime-http-client
 (Sublime)
 
 <img alt="" src="/images/sublime.png" width="200">
+
++++
 
 # vscode-restclient
 
