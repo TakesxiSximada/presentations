@@ -48,7 +48,7 @@
 
 +++
 
-# post man ?
+# postman
 
 https://www.getpostman.com/
 
@@ -57,10 +57,10 @@ https://www.getpostman.com/
 
 +++
 
-# Advanced REST client ?
-(Chrome拡張)
+## Advanced REST client
 
 https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo?hl=ja
+(Chrome拡張)
 
 <img alt="" src="/images/chrome.png" width="200">
 
