@@ -31,9 +31,15 @@
 
 +++
 
-## SOAP ?
-## Rest API ?
-## Other ?
+# SOAP ?
+
++++
+
+# REST API ?
+
++++
+
+# Other ?
 
 +++
 
