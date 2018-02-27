@@ -129,7 +129,7 @@ https://github.com/Huachao/vscode-restclient
 
 +++
 
-<img alt="" src="/images/emacs-gnu.png" width="600">
+<img alt="" src="/images/emacs-gnu.png" width="700">
 
 +++
 
