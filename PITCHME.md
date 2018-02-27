@@ -52,7 +52,7 @@
 
 https://www.getpostman.com/
 
-<img src="/images/postman.png" width="400">
+<img alt="" src="/images/postman.png" width="200">
 
 
 +++
@@ -61,6 +61,8 @@ https://www.getpostman.com/
 (Chrome拡張)
 
 https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo?hl=ja
+
+<img alt="" src="/images/crhome.png" width="200">
 
 +++
 
@@ -73,6 +75,8 @@ https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfg
 https://github.com/diepm/vim-rest-console
 (Vim)
 
+<img alt="" src="/images/vim.png" width="200">
+
 +++
 
 # rester-sublime-http-client
@@ -80,17 +84,22 @@ https://github.com/diepm/vim-rest-console
 https://github.com/pjdietz/rester-sublime-http-client
 (Sublime)
 
+<img alt="" src="/images/sublime.png" width="200">
 
 # vscode-restclient
 
 https://github.com/Huachao/vscode-restclient
 (VS Code)
 
+<img alt="" src="/images/vscode.png" width="200">
+
 +++
 
 # cUrl ?
 
 https://curl.haxx.se/
+
+<img alt="" src="/images/curl.png" width="200">
 
 +++
 
@@ -100,7 +109,13 @@ https://curl.haxx.se/
 
 +++
 
+<img alt="" src="/images/emacs.png" width="800">
+
++++
+
 # Emacs
+
+<img alt="" src="/images/emacs.png" width="200">
 
 +++
 
@@ -181,6 +196,8 @@ M-x package-istall restclient RET
 +++
 
 # チューリング完全
+
+<img alt="" src="/images/turing.png" width="400">
 
 +++
 
