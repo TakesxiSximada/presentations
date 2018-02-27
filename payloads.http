@@ -1,0 +1,38 @@
+# -*- restclient -*-
+:GITHUB_URL := (getenv "GITHUB_URL")
+
+
+# GET
+GET https://api.github.com
+User-Agent: Emacs Restclient
+
+# POST
+POST https://jira.atlassian.com/rest/api/2/search
+Content-Type: application/json
+
+{
+        "jql": "project = HSP",
+        "startAt": 0,
+        "maxResults": 15,
+        "fields": [
+                "summary",
+                "status",
+                "assignee"
+        ]
+}
+
+# DELETE
+DELETE https://jira.atlassian.com/rest/api/2/version/20
+
+
+# XML
+GET http://www.redmine.org/issues.xml?limit=10
+
+
+# Image
+GET http://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png
+
+
+# GET
+GET :GITHUB_URL
+User-Agent: Emacs Restclient
