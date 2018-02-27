@@ -1,10 +1,19 @@
-# My PITCHES
+# サービス連携で
+# よくやること
 
-- [Pythonデバッグ入門](https://gitpitch.com/TakesxiSximada/presentations/python-debug-tips)
-- [Pepper x Python チュートリアル](https://gitpitch.com/TakesxiSximada/presentations/pepper-python-tutorial#/)
+しむどん ( @TakesxiSximada )
 
 ---
 
-### Editing
+## 自己紹介
 
-- [IT交流会](https://gitpitch.com/TakesxiSximada/presentations/waiwai-it-001)
+- Emacs大好き
+- 最近clojure病疾患中
+- JK
+
+
+---
+
+## サービス連携
+## どうやって
+## やってる？
