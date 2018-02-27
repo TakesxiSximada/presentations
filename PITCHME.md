@@ -223,7 +223,7 @@ env.el は git には含めず env.el.example として配布
 
 +++
 
-まとめ
+# まとめ
 
 +++
 
