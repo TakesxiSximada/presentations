@@ -49,7 +49,9 @@ https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfg
 
 +++
 
-# エディタやIDEのプラグインを使っている？
+## エディタやIDEのプラグインを使っている？
+
++++
 
 - Vim: vim-rest-console
 - Sublime: rester-sublime-http-client
@@ -99,7 +101,7 @@ emacsのためのHTTP RESTクライアントツール
 
 +++
 
-# package-istall restclient RET
+M-x package-istall restclient RET
 
 +++
 
