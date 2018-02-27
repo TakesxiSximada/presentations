@@ -83,7 +83,22 @@ https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfg
 
 +++
 
-## エディタやIDEのプラグイン
+# cUrl
+
+https://curl.haxx.se/
+
+<img alt="" src="/images/curl.png" width="200">
+
++++
+
+# Telnet
+
+まじで...
+
++++
+
+## エディタやIDEの
+## プラグイン
 
 +++
 
@@ -111,20 +126,6 @@ https://github.com/Huachao/vscode-restclient
 (VS Code)
 
 <img alt="" src="/images/vscode.png" width="200">
-
-+++
-
-# cUrl
-
-https://curl.haxx.se/
-
-<img alt="" src="/images/curl.png" width="200">
-
-+++
-
-# Telnet
-
-まじで...
 
 +++
 
