@@ -139,11 +139,32 @@ https://github.com/Huachao/vscode-restclient
 
 +++
 
-Emacsには古の時代からhttp-modeがある
+# Emacsには
 
 +++
 
-ただhttp-modeはできないことも多い
+
+# 古の時代から
+
++++
+
+# http-mode
+
++++
+
+# がある
+
++++
+
+# ただし
+
++++
+
+http-modeはできないことも多い
+
++++
+
+# そこで
 
 +++
 
