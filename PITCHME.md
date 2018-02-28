@@ -213,11 +213,11 @@ M-x package-istall restclient RET
 
 +++
 
-# チューリング
+## チューリング
 
 <img alt="" src="/images/turing.png" width="300">
 
-# 完全
+## 完全
 
 +++
 
