@@ -64,10 +64,46 @@
 ## Pythonとは
 
 - プログラミング言語のひとつ
-- 最近では機械学習・人工知能・AIの分野でよく使われる
-- Web
+- Webや機械学習・人工知能・AIの分野でよく使われる
+- コードがよみやすい
+- ライブラリがいっぱいある (標準/サードパーティ)
+- 速くはない
+- Python2? Python3?
 
 ---
+
+# Hello World!
+
+---
+
+### JavaのHello world!
+
+
+```
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+    }
+
+}
+```
+
+---
+
+### PythonのHello world!
+
+```
+print('Hello world!')
+```
+
+---
+
+- Javaがダメな言語といっているわけではない
+- プログラミング言語には長所や短所がある
+- PythonはJavaよりも手軽
+
+---
+
 
 ## どんなところで使われているの？
 
@@ -75,23 +111,13 @@
 
 ### Pythonを使っているサービスやツール
 
-- Google
-- Dropbox
-- Instagram [https://instagram-engineering.com/what-powers-instagram-hundreds-of-instances-dozens-of-technologies-adf2e22da2ad](ソース)
-- Pepper
-- 3Dモデリングツール (Blender)
-- GIMP
-- Ansible
+- Google / Dropbox / Instagram
+- Pepper / Blender / Gimp
+- Ansible / Sphinx
 
----
++++
 
-## Sphinx
-
-- ドキュメンテーションビルダー
-- 多くのOpen Sourceプロジェクトのドキュメント記述に使われている
-- ディレクティブを使った強力な表現
-- reStructured Text
-- 今はMarkdownでも記述できる
+Instagram [https://instagram-engineering.com/what-powers-instagram-hundreds-of-instances-dozens-of-technologies-adf2e22da2ad](ソース)
 
 ---
 
@@ -99,11 +125,11 @@
 
 ---
 
-## Pythonの好きなところ
+## Pythonの特徴
 
 - プログラムがみやすい
 - ライブラリがいっぱいある
-- なれている
+
 
 
 ---
