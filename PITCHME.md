@@ -254,8 +254,9 @@ $ zappa deploy
 
 ---
 
-<img src="/images/flow-01.png">
+#### 構成
 
+<img src="/images/flow-01.png">
 
 ---
 
