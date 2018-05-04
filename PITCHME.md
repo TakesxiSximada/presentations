@@ -72,7 +72,7 @@
 
 ---
 
-# Hello World!
+# Hello world!
 
 ---
 
