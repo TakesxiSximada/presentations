@@ -176,7 +176,9 @@ https://github.com/halcy/Mastodon.py
 
 ---
 
-その後これは放棄されて、自作Emacs Clientに発展していきます。
+その後これは放棄されて
+
+自作Emacs Clientに発展していきます
 
 ---
 
