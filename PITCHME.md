@@ -182,8 +182,9 @@ https://github.com/halcy/Mastodon.py
 
 ---
 
-<img src="/images/mastodonxemacs.png">
-mastodon dev会議での発表資料
+#### mastodon dev会議での発表資料
+
+<img src="/images/mastodonxemacs.png" width="400px">
 https://slideship.com/users/@sximada/presentations/2017/08/NwfdMr4rrtxFPQ2ZQVg6qq/
 
 ---
