@@ -64,11 +64,10 @@
 ## Pythonとは
 
 - プログラミング言語のひとつ
-- Webや機械学習・人工知能・AIの分野でよく使われる
+- Webや機械学習の分野でよく使われる
 - コードがよみやすい
 - ライブラリがいっぱいある (標準/サードパーティ)
 - 速くはない
-- Python2? Python3?
 
 ---
 
@@ -84,7 +83,6 @@ public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello world!");
     }
-
 }
 ```
 
@@ -105,7 +103,8 @@ print('Hello world!')
 ---
 
 
-## どんなところで使われているの？
+## どこで
+## 使われているの？
 
 ---
 
@@ -122,40 +121,6 @@ Instagram [https://instagram-engineering.com/what-powers-instagram-hundreds-of-i
 ---
 
 # その他色々
-
----
-
-## Pythonの特徴
-
-- プログラムがみやすい
-- ライブラリがいっぱいある
-
-
-
----
-
-## Python2? Python3?
-
----
-
-## Pythonを始めるには
-## 何からやれば良いんだろう
-
----
-
-## インストールせずに触れる
-
-- PythonTutor ( http://pythontutor.com/visualize.html#mode=edit )
-- Try Jupyter ( http://jupyter.org/try )
-
----
-
-## インストールする
-
-- 公式 https://www.python.org/downloads/
-- pyenv
-- conda
-- homebrew (macOS)
 
 ---
 
@@ -241,6 +206,37 @@ Twitcasting -> API Gateway -> Lambda -> Mastodon
 ---
 
 <img src="/images/flow-01.png">
+
+
+---
+
+## Pythonを始めるには
+## 何からやれば良いんだろう
+
+---
+
+## インストールせずに触れる
+
+- PythonTutor ( http://pythontutor.com/visualize.html#mode=edit )
+- Try Jupyter ( http://jupyter.org/try )
+
+---
+
+## インストールする
+
+- 公式 https://www.python.org/downloads/
+- pyenv
+- conda
+- homebrew (macOS)
+
+---
+
+# Python2?
+# Python3?
+
+---
+
+# Python3!!
 
 ---
 
