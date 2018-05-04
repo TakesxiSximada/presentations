@@ -177,6 +177,8 @@ https://github.com/halcy/Mastodon.py
 
 その後これは放棄されて、自作Emacs Clientに発展していきます。
 
+---
+
 <img src="/images/mastodonxemacs.png">
 mastodon dev会議での発表資料
 https://slideship.com/users/@sximada/presentations/2017/08/NwfdMr4rrtxFPQ2ZQVg6qq/
