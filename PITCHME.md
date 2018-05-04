@@ -141,11 +141,11 @@ MastodonはRubyとNode.jsだが、利用するという観点で言えばPython�
 
 ---
 
-<img src="/images/pao-toot.png">
+<img src="/images/pao-console.png">
 
 +++
 
-<img src="/images/pao-console.png">
+<img src="/images/pao-toot.png">
 
 ---
 
