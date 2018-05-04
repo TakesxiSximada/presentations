@@ -118,7 +118,7 @@ print('Hello world!')
 
 +++
 
-Instagram [https://instagram-engineering.com/what-powers-instagram-hundreds-of-instances-dozens-of-technologies-adf2e22da2ad](ソース)
+instagram engineering blog  https://instagram-engineering.com/what-powers-instagram-hundreds-of-instances-dozens-of-technologies-adf2e22da2ad
 
 ---
 
@@ -130,10 +130,11 @@ Instagram [https://instagram-engineering.com/what-powers-instagram-hundreds-of-i
 
 ---
 
-###  一人のユーザーとして...
+###  一人のユーザーとして楽しむ
 
-MastodonはRubyとNode.jsだが、利用するという観点で言えばPythonを使っていろいろと遊べる。
-去年一年にMastodonを利用するにあたりPythonでやったことを振り返っていく。
+- MastodonはRubyとNode.jsだが
+- 利用するという観点で言えばPythonを使っていろいろと遊べる
+- 去年一年にMastodon x Pythonでやったことを振りかえる
 
 ---
 
@@ -143,7 +144,7 @@ MastodonはRubyとNode.jsだが、利用するという観点で言えばPython�
 
 <img src="/images/pao-console.png">
 
-+++
+---
 
 <img src="/images/pao-toot.png">
 
@@ -151,7 +152,7 @@ MastodonはRubyとNode.jsだが、利用するという観点で言えばPython�
 
 <img src="/images/pao.png">
 
-+++
+---
 
 <img src="/images/asaga.png">
 
@@ -255,6 +256,11 @@ $ zappa deploy
 
 ---
 
+### こんな感じで
+### 色々遊べる
+
+---
+
 ## Pythonを始めるには
 ## 何からやれば
 ## 良いんだろう
@@ -312,11 +318,3 @@ http://jupyter.org/try
 ## Mastodon and Python
 
 おわり
-
-+++
-
-はい、こんばんわ。
-しむどんです。
-今日は文化祭を楽しみにきました。
-10分だけお時間をもらったのでおつきあいください。
-まずは僕のこと知らない人も多いと思うので自己紹介です。
