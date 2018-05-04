@@ -77,8 +77,8 @@
 
 ---
 
-## Pythonを始めるには何からやれば良いんだろう
-
+## Pythonを始めるには
+## 何からやれば良いんだろう
 
 ---
 
@@ -128,12 +128,21 @@ Twitcasting -> API Gateway -> Lambda -> Mastodon
 
 ### Tootの可視化
 
-- Jupyter + Pandas + matplotlib
-- mstdn.jp -> mongodb -> jupyterで可視化
+---
+
+<img src="/images/flow-01.png" width="400">
 
 ---
 
-# まとめ
+<img src="/images/ruikei.png" width="400">
+
+---
+
+<img src="/images/month.png" width="400">
+
+---
+
+## まとめ
 
 - わーい
 - Pythonすごーい
@@ -141,7 +150,8 @@ Twitcasting -> API Gateway -> Lambda -> Mastodon
 
 ---
 
-# みんなやろうよMastodon
+## みんなやろうよ
+## Mastodon
 
 おわり
 
