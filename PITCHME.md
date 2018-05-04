@@ -215,14 +215,24 @@ Twitcasting -> API Gateway -> Lambda -> Mastodon
 ---
 
 ## Pythonを始めるには
-## 何からやれば良いんだろう
+## 何からやれば
+## 良いんだろう
 
 ---
 
-## インストールせずに触れる
+## インストールせずに触わってみる
 
-- PythonTutor ( http://pythontutor.com/visualize.html#mode=edit )
-- Try Jupyter ( http://jupyter.org/try )
+---
+
+## PythonTutor
+
+http://pythontutor.com/visualize.html#mode=edit
+
+---
+
+## Try Jupyter
+
+http://jupyter.org/try
 
 ---
 
@@ -257,9 +267,7 @@ Twitcasting -> API Gateway -> Lambda -> Mastodon
 ---
 
 ## みんなやろうよ
-## Mastodon
-## and
-## Python
+## Mastodon and Python
 
 おわり
 
