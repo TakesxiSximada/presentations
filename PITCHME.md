@@ -193,7 +193,48 @@ https://github.com/tootsuite/documentation/blob/master/Using-the-API/API.md
 
 ### Twitcasting to Mastodon
 
-Twitcasting -> API Gateway -> Lambda -> Mastodon
+---
+
+#### 構成
+
+<img src="/images/cathy.png">
+
+---
+
+#### アプリケーションの作成
+
+<img src="/images/create-twitcasting-app.png">
+
+---
+
+#### Webhookの登録
+
+```
+POST https://apiv2.twitcasting.tv/webhooks
+Accept: application/json
+X-Api-Version: 2.0
+Authorization: Basic :TOKEN
+Content-Type: application/json
+
+{
+    "user_id": ":USER_ID",
+    "events": ["livestart"]
+}
+```
+
+---
+
+#### Zappa
+
+```
+$ pip install zappa
+$ zappa init
+$ zappa deploy
+```
+
+---
+
+未収載で流そうかと思ったが、そもそも気づかれたくない人もいるはずなのでセルフDMでしばらく運用し、そのうち使わなくなった...
 
 ---
 
@@ -220,7 +261,8 @@ Twitcasting -> API Gateway -> Lambda -> Mastodon
 
 ---
 
-## インストールせずに触わってみる
+## インストールせずに
+## 触わってみる
 
 ---
 
