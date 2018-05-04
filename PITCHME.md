@@ -110,6 +110,24 @@ https://github.com/halcy/Mastodon.py
 
 ### Mastodon.pyを使ってクライアントを書いた
 
+---
+
+<img src="/images/pao-console.png">
+
+---
+
+<img src="/images/pao-toot.png">
+
+---
+
+<img src="/images/pao.png">
+
+---
+
+<img src="/images/asaga.png">
+
+---
+
 その後これは放棄されて、自作Emacs Clientに発展していきます。
 
 ---
