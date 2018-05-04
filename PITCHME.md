@@ -109,7 +109,8 @@ print('Hello world!')
 
 ---
 
-### Pythonを使っているサービスやツール
+### Pythonを使っている
+### サービスやツール
 
 - Google / Dropbox / Instagram
 - Pepper / Blender / Gimp
