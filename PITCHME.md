@@ -130,15 +130,15 @@ Twitcasting -> API Gateway -> Lambda -> Mastodon
 
 ---
 
-<img src="/images/flow-01.png" width="400">
+<img src="/images/flow-01.png">
 
 ---
 
-<img src="/images/ruikei.png" width="400">
+<img src="/images/ruikei.png">
 
 ---
 
-<img src="/images/month.png" width="400">
+<img src="/images/month.png">
 
 ---
 
