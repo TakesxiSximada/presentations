@@ -112,19 +112,14 @@ https://github.com/halcy/Mastodon.py
 
 ---
 
+<img src="/images/pao-toot.png">
 <img src="/images/pao-console.png">
 
 ---
 
-<img src="/images/pao-toot.png">
-
----
-
 <img src="/images/pao.png">
-
----
-
 <img src="/images/asaga.png">
+
 
 ---
 
