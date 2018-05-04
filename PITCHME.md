@@ -130,10 +130,6 @@ Twitcasting -> API Gateway -> Lambda -> Mastodon
 
 ---
 
-<img src="/images/flow-01.png">
-
----
-
 <img src="/images/ruikei.png">
 
 ---
@@ -142,11 +138,19 @@ Twitcasting -> API Gateway -> Lambda -> Mastodon
 
 ---
 
+<img src="/images/flow-01.png">
+
+---
+
 ## まとめ
+
+@ol
 
 - わーい
 - Pythonすごーい
 - Mastodonたーのしー
+
+@olend
 
 ---
 
