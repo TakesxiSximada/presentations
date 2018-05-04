@@ -189,12 +189,6 @@ https://slideship.com/users/@sximada/presentations/2017/08/NwfdMr4rrtxFPQ2ZQVg6q
 
 ---
 
-### MastodonのAPI仕様はここに書かれている
-
-https://github.com/tootsuite/documentation/blob/master/Using-the-API/API.md
-
----
-
 ### Twitcasting to Mastodon
 
 ---
