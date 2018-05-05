@@ -36,7 +36,7 @@
 
 Mastodonにコントリビュートしました
 
-<img src="/images/mastodon-contribute.png" width="600px">
+<img src="/images/mastodon-contribute.png" width="500px">
 
 ---
 
@@ -132,19 +132,19 @@ print('Hello world!')
 
 ---
 
-<img src="/images/pao-console.png" width="600px">
+<img src="/images/pao-console.png" width="500px">
 
 ---
 
-<img src="/images/pao-toot.png" width="600px">
+<img src="/images/pao-toot.png" width="500px">
 
 ---
 
-<img src="/images/pao.png" width="600px">
+<img src="/images/pao.png" width="500px">
 
 ---
 
-<img src="/images/asaga.png" width="600px">
+<img src="/images/asaga.png" width="500px">
 
 ---
 
@@ -174,7 +174,7 @@ https://github.com/halcy/Mastodon.py
 
 #### mastodon dev会議での発表資料
 
-<img src="/images/mastodonxemacs.png" width="600px">
+<img src="/images/mastodonxemacs.png" width="500px">
 https://slideship.com/users/@sximada/presentations/2017/08/NwfdMr4rrtxFPQ2ZQVg6qq/
 
 ---
@@ -185,13 +185,13 @@ https://slideship.com/users/@sximada/presentations/2017/08/NwfdMr4rrtxFPQ2ZQVg6q
 
 #### 構成
 
-<img src="/images/cathy.png" width="600px">
+<img src="/images/cathy.png" width="500px">
 
 ---
 
 #### アプリケーションの作成
 
-<img src="/images/create-twitcasting-app.png" width="600px">
+<img src="/images/create-twitcasting-app.png" width="500px">
 
 ---
 
@@ -269,7 +269,7 @@ $ zappa deploy
 
 ## PythonTutor
 
-<img src="/images/pythontutor.png" width="600px">
+<img src="/images/pythontutor.png" width="500px">
 
 http://pythontutor.com/visualize.html#mode=edit
 
@@ -277,7 +277,7 @@ http://pythontutor.com/visualize.html#mode=edit
 
 ## Try Jupyter
 
-<img src="/images/tryjupyter.png" width="600px">
+<img src="/images/tryjupyter.png" width="500px">
 
 http://jupyter.org/try
 
