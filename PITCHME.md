@@ -40,10 +40,6 @@ Mastodonにコントリビュートしました
 
 ---
 
-# 今日の目標
-
----
-
 ### 今日の目標
 
 @ul
@@ -63,6 +59,29 @@ Mastodonにコントリビュートしました
 - コードがよみやすい
 - ライブラリがいっぱいある (標準/サードパーティ)
 - 速くはない
+
+---
+
+
+## どこで
+## 使われているの？
+
+---
+
+### Pythonを使っている
+### サービスやツール
+
+- Google / Dropbox / Instagram
+- Pepper / Blender / Gimp
+- Ansible / Sphinx
+
++++
+
+instagram engineering blog  https://instagram-engineering.com/what-powers-instagram-hundreds-of-instances-dozens-of-technologies-adf2e22da2ad
+
+---
+
+# その他色々
 
 ---
 
@@ -91,32 +110,9 @@ print('Hello world!')
 
 ---
 
-- Javaがダメな言語といっているわけではない
 - プログラミング言語には長所や短所がある
 - PythonはJavaよりも手軽
-
----
-
-
-## どこで
-## 使われているの？
-
----
-
-### Pythonを使っている
-### サービスやツール
-
-- Google / Dropbox / Instagram
-- Pepper / Blender / Gimp
-- Ansible / Sphinx
-
-+++
-
-instagram engineering blog  https://instagram-engineering.com/what-powers-instagram-hundreds-of-instances-dozens-of-technologies-adf2e22da2ad
-
----
-
-# その他色々
+- Javaがダメな言語といっているわけではない
 
 ---
 
