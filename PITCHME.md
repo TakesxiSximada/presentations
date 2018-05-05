@@ -13,17 +13,9 @@
 
 ---
 
-# 注意
-
----
-
 ## 二コフレの
 ## あの方とは
 ## 別人です
-
----
-
-# 突然ですが
 
 ---
 
@@ -44,6 +36,16 @@
 
 拍手〜
 
++++
+
+もう一個自慢
+
++++
+
+Mastodonにコントリビュートしました
+
+<img src="/images/mastodon-contribute.png" width="400px">
+
 ---
 
 # 今日の目標
@@ -55,7 +57,7 @@
 @ul
 
 - 「Pythonでこんなことができるんだ」
-- 「Pythonおもしろそうだなあ」
+- 「MastodonとPythonおもしろそうだなあ」
 - 「しむどんに5000兆円あげたいなあ」
 
 @ulend
@@ -126,19 +128,19 @@ instagram engineering blog  https://instagram-engineering.com/what-powers-instag
 
 ---
 
-## MastodonとPython
+# MastodonとPython
 
 ---
 
 ###  一人のユーザーとして楽しむ
 
-- MastodonはRubyとNode.jsだが
-- 利用するという観点で言えばPythonを使っていろいろと遊べる
+- MastodonはRubyとNode.js
+- MastodonをPythonから利用する
 - 去年一年にMastodon x Pythonでやったことを振りかえる
 
 ---
 
-### クライアントを書いた
+# クライアントを書いた
 
 ---
 
@@ -178,7 +180,7 @@ https://github.com/halcy/Mastodon.py
 
 その後これは放棄されて
 
-自作Emacs Clientに発展していきます
+自作Emacs Clientへ
 
 ---
 
@@ -189,7 +191,7 @@ https://slideship.com/users/@sximada/presentations/2017/08/NwfdMr4rrtxFPQ2ZQVg6q
 
 ---
 
-### Twitcasting to Mastodon
+## Twitcasting to Mastodon
 
 ---
 
@@ -242,7 +244,7 @@ $ zappa deploy
 
 ---
 
-### Tootの可視化
+# Toot数の可視化
 
 ---
 
@@ -278,11 +280,15 @@ $ zappa deploy
 
 ## PythonTutor
 
+<img src="/images/pythontutor.png">
+
 http://pythontutor.com/visualize.html#mode=edit
 
 ---
 
 ## Try Jupyter
+
+<img src="/images/tryjupyter.png">
 
 http://jupyter.org/try
 
@@ -319,6 +325,10 @@ http://jupyter.org/try
 ---
 
 ## みんなやろうよ
-## Mastodon and Python
+## Mastodon x Python
 
 おわり
+
++++
+
+時間が余ったらdemo
