@@ -288,7 +288,7 @@ http://pythontutor.com/visualize.html#mode=edit
 
 ## Try Jupyter
 
-<img src="/images/tryjupyter.png">
+<img src="/images/tryjupyter.png" width="800">
 
 http://jupyter.org/try
 
