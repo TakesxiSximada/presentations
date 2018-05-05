@@ -32,9 +32,7 @@
 
 ---
 
-<img src="/images/14man.png" width="400px">
-
-拍手〜
+<img src="/images/14man.png" width="600px">
 
 +++
 
@@ -44,7 +42,7 @@
 
 Mastodonにコントリビュートしました
 
-<img src="/images/mastodon-contribute.png" width="400px">
+<img src="/images/mastodon-contribute.png" width="600px">
 
 ---
 
@@ -144,19 +142,19 @@ instagram engineering blog  https://instagram-engineering.com/what-powers-instag
 
 ---
 
-<img src="/images/pao-console.png">
+<img src="/images/pao-console.png" width="600px">
 
 ---
 
-<img src="/images/pao-toot.png">
+<img src="/images/pao-toot.png" width="600px">
 
 ---
 
-<img src="/images/pao.png">
+<img src="/images/pao.png" width="600px">
 
 ---
 
-<img src="/images/asaga.png">
+<img src="/images/asaga.png" width="600px">
 
 ---
 
@@ -186,7 +184,7 @@ https://github.com/halcy/Mastodon.py
 
 #### mastodon dev会議での発表資料
 
-<img src="/images/mastodonxemacs.png" width="400px">
+<img src="/images/mastodonxemacs.png" width="600px">
 https://slideship.com/users/@sximada/presentations/2017/08/NwfdMr4rrtxFPQ2ZQVg6qq/
 
 ---
@@ -197,13 +195,13 @@ https://slideship.com/users/@sximada/presentations/2017/08/NwfdMr4rrtxFPQ2ZQVg6q
 
 #### 構成
 
-<img src="/images/cathy.png">
+<img src="/images/cathy.png" width="600px">
 
 ---
 
 #### アプリケーションの作成
 
-<img src="/images/create-twitcasting-app.png">
+<img src="/images/create-twitcasting-app.png" width="600px">
 
 ---
 
@@ -288,7 +286,7 @@ http://pythontutor.com/visualize.html#mode=edit
 
 ## Try Jupyter
 
-<img src="/images/tryjupyter.png" width="800">
+<img src="/images/tryjupyter.png" width="600px">
 
 http://jupyter.org/try
 
