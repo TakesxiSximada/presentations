@@ -236,17 +236,18 @@ $ zappa deploy
 
 ---
 
+#### 構成
+
+<img src="/images/flow-01.png">
+
+
+---
+
 <img src="/images/ruikei.png">
 
 ---
 
 <img src="/images/month.png">
-
----
-
-#### 構成
-
-<img src="/images/flow-01.png">
 
 ---
 
