@@ -316,9 +316,9 @@ http://jupyter.org/try
 
 @ul
 
-- わーい
 - Pythonすごーい
 - Mastodonたーのしー
+- 5000兆円くださーい
 
 @ulend
 
