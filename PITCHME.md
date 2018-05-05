@@ -280,7 +280,7 @@ $ zappa deploy
 
 ## PythonTutor
 
-<img src="/images/pythontutor.png">
+<img src="/images/pythontutor.png" width="400px">
 
 http://pythontutor.com/visualize.html#mode=edit
 
