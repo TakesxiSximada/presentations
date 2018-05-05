@@ -32,7 +32,7 @@
 
 ---
 
-<img src="/images/14man.png" width="600px">
+<img src="/images/14man.png" width="300px">
 
 +++
 
